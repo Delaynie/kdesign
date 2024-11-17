@@ -5,30 +5,222 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kimball Designs</title>
-<!-- FONTAWESOME, probably need an updated link 10-18-24 -->
-<script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
 
 <!-- Font Choices - Work sans, Fira sans, roboto, inter, dm, montserrat -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<!-------------------- CSS Sheets ------------------------->
+<!-------------------- CSS and Template Sheets ------------------------->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-------------------- Font Awesome (for icons) -------------------->
+<script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body id="grad1">
 
-    <h1 class="fira-sans-thin"> The homepage will be a simple landing page style that is sleek, clean, and easy call to actions/navigations such as featured products, a clear place to look at all available products, quick links to photo galleries, and quote request buttons/contact form and info. We might even be able to have the about info displayed on this page and get rid of the about page.</h1>
+    <!------------ Loading button for future use ------------
+    <button class="buttonload">
+    <i class="fa-solid fa-spinner fa-spin"></i> LOADING
+</button>
+---------------------------->
+    <!------------- To the Top button ---------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
     
-    <div> <!-- Starter testing -->
-        <h1 class="fira-sans-medium">Kimball Design</h1>
-        <h2 class="fira-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a, animi eum similique expedita cum quas sit esse facere ea laudantium obcaecati recusandae eos voluptates libero laborum culpa. Eius, blanditiis.</h2>
+
+    <!----------------- HEADER ----------------->
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
+  
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="navMobile w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-black w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center navItems">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Featured Products</a>
+      <a href="#gablevents" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
+      <a href="#shutters" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Shutters</a>
+      <a href="#accessdoors" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Access Doors</a>
+      <a href="Shipping Policies" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Shipping Policies</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
     </div>
+  </nav>
+  
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large bg-orange" style="margin-left:40%">
+  
+    <!-- Menu icon to open sidebar -->
+    <span class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">All Products <i class="fa fa-bars"></i></span>
+  
+  
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding: 80px 16px;" id="home">
+      <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
+      <p class="little-title">New Look, Same Great Quality.</p>
+      <img src="gallery_images/danmurphy2.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+      <img src="gallery_images/danmurphy2.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+      
+      <button class="w3-button w3-light-grey w3-padding-medium w3-margin-top" style="border-radius:12px; box-shadow: 1px 1px 1px .5px;">
+        <i class="fa fa-download"></i> Download Product Catalog
+      </button>
+    </header>
+
+  </div>
+
+    <!----------------- MOBILE HEADER (if needed) ----------------->
+    <!----------------- Introduction area ----------------->
 
 
-    <footer>
-        <h4>Quick links will be placed here in the footer, along with contact info and a scroll to top button.</h4>
-    </footer>
+
+<!------------ Featured Products Section ------------------>
+
+<section class="featured-products-carousel">
+    <h2 class="section-title">Featured Products</h2>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="featured-text">
+                    <h3>Bahama Shutter</h3>
+                    <p>This is a short description about Product 1. It's innovative and offers great value.</p>
+                    <a href="#" class="more-info-btn">More Info</a>
+                </div>
+                <div class="featured-image">
+                    <img src="/product_images/bahamashutter.jpeg" alt="Featured Product 1">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="featured-text">
+                    <h3>Octagon Gable Vent</h3>
+                    <p>This is a short description about Product 2. It’s packed with features and a must-have.</p>
+                    <a href="#" class="more-info-btn">More Info</a>
+                </div>
+                <div class="featured-image">
+                    <img src="/product_images/octagon_group_thumb.gif" alt="Featured Product 2">
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="featured-text">
+                    <h3>Round Gable Vent</h3>
+                    <p>This is a short description about Product 3. It’s sleek, efficient, and top-rated by customers.</p>
+                    <a href="#" class="more-info-btn">More Info</a>
+                </div>
+                <div class="featured-image">
+                    <img src="/product_images/round cedar vents.jpg" alt="Featured Product 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="prev-btn">❮</button>
+        <button class="next-btn">❯</button>
+    </div>
+</section>
+
+<!----------- Alternating paragraphs ---------------->
+<section class="alternating-layout">
+    <div class="content-container">
+        <!-- First Pair: Paragraph Left, Image Right -->
+        <div class="pair reverse">
+            <div class="text">
+                <p>This is a paragraph on the left side. It gives some explanation or information about the image on the right.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 1">
+            </div>
+        </div>
+
+        <!-- Second Pair: Paragraph Right, Image Left -->
+        <div class="pair mobile-reverse">
+            <div class="text">
+                <p>This is a paragraph on the right side. It provides context for the image on the left.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 2">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="alternating-layout">
+    <div class="content-container">
+        <!-- First Pair: Paragraph Left, Image Right -->
+        <div class="pair reverse">
+            <div class="text">
+                <p>This is a paragraph on the left side. It gives some explanation or information about the image on the right.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 1">
+            </div>
+        </div>
+
+        <!-- Second Pair: Paragraph Right, Image Left -->
+        <div class="pair mobile-reverse">
+            <div class="text">
+                <p>This is a paragraph on the right side. It provides context for the image on the left.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 2">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="alternating-layout">
+    <div class="content-container">
+        <!-- First Pair: Paragraph Left, Image Right -->
+        <div class="pair reverse">
+            <div class="text">
+                <p>This is a paragraph on the left side. It gives some explanation or information about the image on the right.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 1">
+            </div>
+        </div>
+
+        <!-- Second Pair: Paragraph Right, Image Left -->
+        <div class="pair mobile-reverse">
+            <div class="text">
+                <p>This is a paragraph on the right side. It provides context for the image on the left.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/400" alt="Sample Image 2">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--------------- FOOTER ----------------->
+      <!-- Footer -->
+      <footer class="bg-color w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+        <h6 class="bg-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod qui numquam expedita natus obcaecati consequuntur dolorem velit modi voluptate suscipit, et vitae debitis pariatur praesentium tenetur in doloribus earum. Nesciunt!</h6>
+      <!-- End footer -->
+      </footer>
+    
+    <!---------------- MOBILE FOOTER --------------->
+
+<!----------Javascript and JS Links -------------->
+    <script src="js/main.js"></script>
+    <script>
+        // Open and close sidebar
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "60%";
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    
 </body>
 </html>
