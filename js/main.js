@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isTouching) return; // Prevent multiple touchstart events from firing
       isTouching = true; // Mark that the user is touching
       startX = e.touches[0].clientX; // Get starting position of the touch
+      endX = startX; // Reset endX when a new touch begins
   });
 
   carousel.addEventListener('touchmove', (e) => {
@@ -97,7 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
           updateCarouselPosition();
       }
 
+      // Reset the swipe tracking values for the next swipe
       isTouching = false; // Reset after swipe ends
+      startX = 0; // Reset startX for the next swipe
+      endX = 0; // Reset endX for the next swipe
   });
 
   // Handle Clickable Navigation (Desktop)
