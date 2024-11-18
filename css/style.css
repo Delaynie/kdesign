@@ -525,11 +525,13 @@ footer {
 .scroll-to-top:hover {
   background-color: #0056b3;
   transform: scale(1.1); /* Slightly enlarge the button on hover */
+  transition: 0.8s ease-in-out;
 }
 /* If the button is clicked on mobile, disable the hover effect */
 .scroll-to-top.clicked:hover {
   background-color: #007bff; /* Reset the background color */
   transform: none; /* Remove the scaling effect */
+  transition: 0.3s ease;
 }
 
 
