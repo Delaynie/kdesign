@@ -449,6 +449,24 @@ need once you narrow down a font -----------------------*/
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* --------- styling for horizontal image gallery ----------*/
+
+div.scroll-container {
+  margin-left: 40%;
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  height: auto;
+  width: 60%;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  height: 300px;
+  width: auto;
+}
+
 /* --------------------- Alternating Section CSS -------- */
 
 /* Alternating Layout Section */
