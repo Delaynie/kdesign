@@ -106,31 +106,39 @@
   font-size: 16px /* Set a font size */
 }
 
-/* ------- To the Top Button ----------- */
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: orange; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
+/* to the top button styling */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
   padding: 10px 18px 10px 18px; /* Some padding */
   border-radius: 60px 25px 60px 25px; /* Rounded corners */
   font-size: 24px; /* Increase font size */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  background-color: orange;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  text-shadow: 4px, 4px, 5px rgba(0,0,0,0.2);
 }
 
-#myBtn:hover {
+/* Hover effect for normal screens */
+.scroll-to-top:hover {
   background-color: rgb(216, 141, 2); /* Add a dark-grey background on hover */
   transform: perspective(500px) rotateX(0deg) scale(1.08); /* Slight scaling for effect */
     text-shadow: 
         2px 2px 5px rgba(0, 0, 0, 0.2), 
         4px 4px 8px rgba(0, 0, 0, 0.3),
         6px 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+/* If the button is clicked on mobile, disable the hover effect */
+.scroll-to-top.clicked:hover {
+  background-color: orange; /* Reset the background color */
+  transform: none; /* Remove the scaling effect */
+  transition: 0.3s ease;
 }
 
 .buttonMenu {
@@ -145,7 +153,7 @@
   border-radius: 44px 16px;
   color: rgb(220,220,220);
   background-color: rgb(34, 116, 165);
-  box-shadow: 1px 1px 1px 1.5px black;
+  box-shadow: 1px 1px 1px 1.5px rgb(60,60,60);
   transition: all 0.3s ease;
   cursor: pointer;
   right:0;
@@ -503,35 +511,6 @@ need once you narrow down a font -----------------------*/
 
 footer {
   margin-left: 40%;
-}
-
-/* second scroll to top button to compare to the other one
-/* Basic button styling */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 15px;
-  font-size: 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover effect for normal screens */
-.scroll-to-top:hover {
-  background-color: #0056b3;
-  transform: scale(1.1); /* Slightly enlarge the button on hover */
-  transition: 0.8s ease-in-out;
-}
-/* If the button is clicked on mobile, disable the hover effect */
-.scroll-to-top.clicked:hover {
-  background-color: #007bff; /* Reset the background color */
-  transform: none; /* Remove the scaling effect */
-  transition: 0.3s ease;
 }
 
 
