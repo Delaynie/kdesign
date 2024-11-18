@@ -55,18 +55,16 @@ function handleScroll() {
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
 
+// Carousel Code 
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
   const carouselItems = document.querySelectorAll('.carousel-item');
   const totalItems = carouselItems.length;
   let currentIndex = 0; // Start with the first item
-  let startX = 0;
-  let endX = 0;
+  let startX = 0; // Track the starting X position of the touch
+  let endX = 0; // Track the ending X position of the touch
 
-  const prevButton = document.querySelector('.prev-btn');
-  const nextButton = document.querySelector('.next-btn');
-
-  // Function to update carousel position
+  // Function to update the carousel position
   function updateCarouselPosition() {
       const offset = -currentIndex * 100; // Move by the width of one item (100%)
       carousel.style.transform = `translateX(${offset}%)`;
@@ -74,44 +72,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Swipe event handlers for mobile
   carousel.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
+      startX = e.touches[0].clientX; // Get starting position of the touch
   });
 
   carousel.addEventListener('touchmove', (e) => {
-      endX = e.touches[0].clientX;
+      endX = e.touches[0].clientX; // Get the current position of the touch
   });
 
   carousel.addEventListener('touchend', () => {
-      const swipeDistance = startX - endX;
+      const swipeDistance = startX - endX; // Calculate the distance swiped
 
-      if (swipeDistance > 20) {
+      // If swiped left, go to the next item (forward)
+      if (swipeDistance > 50) {
           currentIndex = (currentIndex + 1) % totalItems; // Move to next item
           updateCarouselPosition();
-      } else if (swipeDistance < -20) {
+      }
+
+      // If swiped right, go to the previous item (backward)
+      else if (swipeDistance < -50) {
           currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous item
           updateCarouselPosition();
       }
   });
 
   // Handle Clickable Navigation (Desktop)
+  const nextButton = document.querySelector('.next-btn');
+  const prevButton = document.querySelector('.prev-btn');
+
+  // Next button
   nextButton.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % totalItems; // Move to next item
       updateCarouselPosition();
   });
 
+  // Previous button
   prevButton.addEventListener('click', () => {
       currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous item
       updateCarouselPosition();
   });
 
-  // Optional: Auto Slide every 5 seconds
+  // Optional: Auto slide every 5 seconds (reset swipe interval on interaction)
   let autoSlideInterval = setInterval(() => {
       currentIndex = (currentIndex + 1) % totalItems;
       updateCarouselPosition();
   }, 5000);
 
-  /* Reset auto-slide if user interacts
+  // Reset auto-slide if user interacts
   carousel.addEventListener('touchstart', () => {
       clearInterval(autoSlideInterval);
-  });*/
+  });
+
 });
