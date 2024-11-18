@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth <= 820) {
         scrollToTopBtn.classList.add('clicked');
           // reset after a short time (e.g., 2 seconds)
-          setTimeout(() => {
+         /* setTimeout(() => {
               scrollToTopBtn.classList.remove('clicked');
-          }, 1000); // Reset the effect after 1 second
+          }, 1000);*/ // Reset the effect after 1 second
       }
   });
 });
