@@ -505,9 +505,32 @@ footer {
   margin-left: 40%;
 }
 
+/* second scroll to top button to compare to the other one
+/* Basic button styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for normal screens */
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
 
   .w3-container {
     margin-bottom: 40px;
@@ -525,15 +548,7 @@ footer {
   background-size: cover;
   background-image: url(/gallery_images/kdesignhousetwo.JPEG);
   min-height: 100%;
-  transition: all 0.4s ease; /* Smooth transition for hover effects */
-}
-.mobileImg:hover {
-  transform: perspective(500px) rotateX(0deg) scale(1.5); /* Slight scaling for effect */
-    text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.2), 
-        4px 4px 8px rgba(0, 0, 0, 0.3),
-        6px 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
-    
+  width: fit-content;
 }
 
 .featured-products-carousel {
