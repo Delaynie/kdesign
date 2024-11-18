@@ -463,8 +463,13 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 10px;
-  height: 300px;
+  height: 350px;
   width: auto;
+}
+
+.mobileText {
+  margin-left: 40%;
+  text-align: center;
 }
 
 /* --------------------- Alternating Section CSS -------- */
@@ -578,6 +583,27 @@ footer {
 }
 .section-title {
     font-size: 14px;
+}
+
+/* horizontal scroll mobile styling */
+div.scroll-container {
+  margin: auto;
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  height: 350px;
+  width: auto;
+}
+
+.mobileText {
+  margin: auto;
 }
 
 .alternating-layout {
