@@ -526,6 +526,11 @@ footer {
   background-color: #0056b3;
   transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
+/* If the button is clicked on mobile, disable the hover effect */
+.scroll-to-top.clicked:hover {
+  background-color: #007bff; /* Reset the background color */
+  transform: none; /* Remove the scaling effect */
+}
 
 
 /* Responsive Design */
