@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = 0; // Start with the first item
   let startX = 0; // Track the starting X position of the touch
   let endX = 0; // Track the ending X position of the touch
-  let isTouching = false; // To prevent multiple events from firing at once
+  let isTouching = false; // Prevent multiple touch events from firing at once
 
   // Function to update the carousel position
   function updateCarouselPosition() {
@@ -116,15 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
       updateCarouselPosition();
   });
 
-  /*/ Optional: Auto slide every 5 seconds (reset swipe interval on interaction)
+  // Optional: Auto slide every 5 seconds (reset swipe interval on interaction)
   let autoSlideInterval = setInterval(() => {
       currentIndex = (currentIndex + 1) % totalItems;
       updateCarouselPosition();
   }, 5000);
 
-  /* Reset auto-slide if user interacts
+  // Reset auto-slide if user interacts
   carousel.addEventListener('touchstart', () => {
       clearInterval(autoSlideInterval);
-  });*/
+  });
 
 });
