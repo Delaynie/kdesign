@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
       // Check if the device is mobile (and disable hover effect on mobile)
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 820) {
         scrollToTopBtn.classList.add('clicked');
           // reset after a short time (e.g., 2 seconds)
           setTimeout(() => {
               scrollToTopBtn.classList.remove('clicked');
-          }, 1000); // Reset the effect after 2 seconds
+          }, 1000); // Reset the effect after 1 second
       }
   });
 });
