@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // If swiped right, go to the previous item (backward)
-      else if (swipeDistance < -50) {
+      else if (swipeDistance < -10) {
           currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous item
           updateCarouselPosition();
       }
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Optional: Auto slide every 5 seconds (reset swipe interval on interaction)
-  let autoSlideInterval = setInterval(() => {
+  /*let autoSlideInterval = setInterval(() => {
       currentIndex = (currentIndex + 1) % totalItems;
       updateCarouselPosition();
   }, 5000);
@@ -120,6 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Reset auto-slide if user interacts
   carousel.addEventListener('touchstart', () => {
       clearInterval(autoSlideInterval);
-  });
+  });*/
 
 });
