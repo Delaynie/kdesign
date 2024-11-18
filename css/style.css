@@ -567,6 +567,23 @@ footer {
   margin: auto;
 }
 
+/* Possible updated mobile for carousel 
+ .featured-products-carousel {
+        width: 80%;
+    }
+    .carousel-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .featured-text {
+        width: 100%;
+        padding: 10px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+
+*/
 
 
 
