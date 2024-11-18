@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
   carousel.addEventListener('touchend', () => {
       const swipeDistance = startX - endX;
 
-      if (swipeDistance > 50) {
+      if (swipeDistance > 20) {
           currentIndex = (currentIndex + 1) % totalItems; // Move to next item
           updateCarouselPosition();
-      } else if (swipeDistance < -50) {
+      } else if (swipeDistance < -20) {
           currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous item
           updateCarouselPosition();
       }
@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
       updateCarouselPosition();
   }, 5000);
 
-  // Reset auto-slide if user interacts
+  /* Reset auto-slide if user interacts
   carousel.addEventListener('touchstart', () => {
       clearInterval(autoSlideInterval);
-  });
+  });*/
 });
