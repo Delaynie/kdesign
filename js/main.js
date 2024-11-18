@@ -80,19 +80,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   carousel.addEventListener('touchend', () => {
-      const swipeDistance = startX - endX; // Calculate the distance swiped
+    const swipeDistance = startX - endX; // Calculate the distance swiped
+    const swipeThreshold = 50; // Set a threshold for the swipe distance
 
-      // If swiped left, go to the next item (forward)
-      if (swipeDistance > 50) {
-          currentIndex = (currentIndex + 1) % totalItems; // Move to next item
-          updateCarouselPosition();
-      }
+    // If swiped left (distance is positive), move to the next item
+    if (swipeDistance > swipeThreshold) {
+        currentIndex = (currentIndex + 1) % totalItems; // Move to the next item
+        updateCarouselPosition();
+    }
 
-      // If swiped right, go to the previous item (backward)
-      else if (swipeDistance < -10) {
-          currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to previous item
-          updateCarouselPosition();
-      }
+    // If swiped right (distance is negative), move to the previous item
+    else if (swipeDistance < -swipeThreshold) {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move to the previous item
+        updateCarouselPosition();
+    }
   });
 
   // Handle Clickable Navigation (Desktop)
