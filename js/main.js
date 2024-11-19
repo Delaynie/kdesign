@@ -132,3 +132,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const imageSection = document.querySelector('.image-section');
+  const dots = document.querySelectorAll('.dot');
+  const totalImages = document.querySelectorAll('.image-container').length;
+
+  // Function to update active dot based on scroll position
+  function updateActiveDot() {
+    const scrollLeft = imageSection.scrollLeft;
+    const containerWidth = imageSection.offsetWidth;
+    const currentIndex = Math.floor(scrollLeft / containerWidth); // Use Math.floor for a cleaner calculation
+
+    // Remove the 'active' class from all dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Add the 'active' class to the current dot
+    if (dots[currentIndex]) {
+      dots[currentIndex].classList.add('active');
+    }
+  }
+
+  // Listen for scroll events
+  imageSection.addEventListener('scroll', updateActiveDot);
+
+  // Initialize the active dot on load
+  updateActiveDot();
+});
