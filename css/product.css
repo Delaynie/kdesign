@@ -226,3 +226,44 @@ body {
         font-size: 2rem;
     }
   }
+
+  /* horizontal css */
+
+/* alternative horizontal with overlay */
+/* Style for the section */
+.image-section {
+  display: flex;   
+  justify-content: space-around;  
+  gap: 10px;                      
+  padding: 20px;
+  margin-left: 40%;
+  overflow: auto;
+  width:60%;
+}
+
+/* Style for the image container */
+.image-container {
+  position: relative;            /* Position the container to allow absolute positioning of overlay */
+  width: 100%;                    /* Set width of each image container */
+  border-radius: 10px;           /* Optional: rounded corners for the image container */
+}
+
+/* Style for the images */
+.image {
+  width: auto;                   /* Make the image fill the container */
+  height: 300px;                  /* Ensure image height is fully covered */
+  object-fit: contain;             /* Make sure the image covers the container without distortion */
+}
+
+/* Style for the text overlay */
+.overlay {
+  position: absolute;            /* Position the text overlay */
+  bottom: 0;                     /* Position the text at the bottom of the container */
+  left: 0;
+  width: 100%;                   /* Ensure the overlay spans the entire width of the container */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;                  /* White text color */
+  padding: 20px;                 /* Padding around the text */
+  text-align: center;            /* Center align the text */
+  font-size: 16px;               /* Text size */
+}

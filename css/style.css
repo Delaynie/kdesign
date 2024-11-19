@@ -449,30 +449,116 @@ need once you narrow down a font -----------------------*/
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* --------- styling for horizontal image gallery ----------*/
-
-div.scroll-container {
-  margin-left: 40%;
-  background-color: white;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  height: auto;
-  width: 60%;
-}
-
-div.scroll-container img {
-  padding: 10px;
-  height: 350px;
-  width: auto;
-}
 
 .mobileText {
   margin-left: 40%;
   text-align: center;
 }
 
-/* --------------------- Alternating Section CSS -------- */
+
+/* -------- Horizontal scroll featured section with visible scroll bar -------*/
+
+.image-section {
+  position: relative;
+  width: 100%; /* Make the section take up 100% of the width */
+  margin-left: 40%; /* Shift the section 40% to the right */
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  gap: 20px;
+  overflow-x: scroll; /* Ensure horizontal scrollbar is always visible */
+  scroll-snap-type: x mandatory; /* Ensure smooth scrolling */
+}
+
+.swipe-indicator {
+  position: relative;
+  bottom: 10px;  /* Place it at the bottom of the section */
+  left: 0;
+  width: 100%;  /* Make it as wide as the container */
+  height: 12px;  /* Set a small height */
+  margin-left: 40%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* The icon inside the swipe indicator */
+.swipe-icon {
+  height: 20px;
+  width: 200px;
+  font-size: 24px;
+  text-align: center;
+  animation: swipeMove 1.5s ease-in-out infinite;
+}
+
+/* Animation for the swipe indicator */
+@keyframes swipeAnimation {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* Animation for the swipe icon moving back and forth */
+@keyframes swipeMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Style for the image container */
+.image-container {
+  position: relative;
+  min-width: 300px; /* Set the width of each image container */
+  max-width: 100%;
+  flex-shrink: 0;
+  overflow: scroll;
+  border-radius: 10px;
+  margin-right: 10px;
+  scroll-snap-align: start; /* Align images to the start of the scroll container */
+}
+
+/* Style for the images */
+.image {
+  width: auto;
+  height: 350px;
+  object-fit: contain;
+}
+
+/* Style for the text overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: thin;
+}
+
+/* Optional: Remove scrollbar for clean design (it will still scroll with touch) */
+.image-section::-webkit-scrollbar {
+  display: scroll;
+}
+
+/* --------------------- Alternating Section CSS ------------- */
 
 /* Alternating Layout Section */
 .alternating-layout {
@@ -586,20 +672,16 @@ footer {
 }
 
 /* horizontal scroll mobile styling */
-div.scroll-container {
+.image-section {
   margin: auto;
-  background-color: white;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-  height: auto;
   width: 100%;
+  gap: 30px;
+  padding: 30px;
 }
 
-div.scroll-container img {
-  padding: 10px;
-  height: 350px;
-  width: auto;
+.image-container {
+  width: 100%;
+  padding: 30px;
 }
 
 .mobileText {
