@@ -15,6 +15,7 @@
   justify-content: center;
   color: white;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.301)
 }
 
 /* Blurred background */
@@ -36,6 +37,7 @@
 .hero-content {
   z-index: 2; /* Ensure content stays on top of the background */
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text for readability */
+  width: 75vw;
 }
 
 .hero h1 {
@@ -53,8 +55,8 @@
 
 .cta-button {
   padding: 15px 30px;
-  background-color: #ffd700;
-  color: #333;
+  background-color: orange;
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -62,7 +64,7 @@
 }
 
 .cta-button:hover {
-  background-color: #ffcc00;
+  background-color: rgb(230, 150, 2);
 }
 
 
@@ -805,12 +807,12 @@ footer {
 }
 
 .hero h1 {
-  font-size: 18px;
+  font-size: 24px;
 }
 .hero p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .cta-button {
-  font-size: 14px;
+  font-size: 16px;
 }
 }
