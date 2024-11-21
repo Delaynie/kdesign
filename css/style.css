@@ -5,14 +5,11 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-
-
+/* hero section */
 /* Hero Section */
 .hero {
   position: relative;
   height: 100vh; /* Full viewport height */
-  background: linear-gradient(45deg, #3a6b80, #576d7e); /* Solid gradient for background */
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,17 +17,34 @@
   text-align: center;
 }
 
+/* Blurred background */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/gallery_images/plankshutterKimball\ Designs.JPG'); /* Same image for background */
+  background-size: cover;
+  background-position: center;
+  /*filter: blur(5px); /* Apply blur effect to the background */
+  
+  z-index: -1; /* Ensure it stays behind content */
+}
+
+/* Content above the blurred background */
 .hero-content {
   z-index: 2; /* Ensure content stays on top of the background */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text for readability */
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 24px;
   margin-bottom: 30px;
   max-width: 600px;
   margin-left: auto;
@@ -50,33 +64,6 @@
 .cta-button:hover {
   background-color: #ffcc00;
 }
-
-/* Image container with subtle animation for movement */
-.hero-image {
-  position: absolute;
-  bottom: 20px; /* Align the image to the bottom */
-  width: 100%;
-  max-width: 800px;
-  animation: slideImage 15s ease-in-out infinite;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Subtle background animation effect (color shifting for the hero background) */
-@keyframes slideImage {
-  0%, 100% {
-      transform: translateX(0); /* Start and end at normal position */
-  }
-  50% {
-      transform: translateX(-30px); /* Slight horizontal slide to the left */
-  }
-}
-
 
 
 
