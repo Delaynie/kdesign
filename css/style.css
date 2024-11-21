@@ -5,6 +5,81 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(45deg, #3a6b80, #576d7e); /* Solid gradient for background */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  z-index: 2; /* Ensure content stays on top of the background */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffcc00;
+}
+
+/* Image container with subtle animation for movement */
+.hero-image {
+  position: absolute;
+  bottom: 20px; /* Align the image to the bottom */
+  width: 100%;
+  max-width: 800px;
+  animation: slideImage 15s ease-in-out infinite;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Subtle background animation effect (color shifting for the hero background) */
+@keyframes slideImage {
+  0%, 100% {
+      transform: translateX(0); /* Start and end at normal position */
+  }
+  50% {
+      transform: translateX(-30px); /* Slight horizontal slide to the left */
+  }
+}
+
+
+
+
 /* header colors */
 /* background-color: rgb(14, 31, 113);
     color:  rgb(225,225,225);
@@ -740,5 +815,15 @@ footer {
 footer {
   margin: auto;
   width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1rem;
+}
+.cta-button {
+  font-size: 1rem;
 }
 }
