@@ -13,14 +13,128 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<!-- w3 CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <!-------------------- CSS Sheets ------------------------->
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 <body>
-    <h1 class="product"> All types of shutters that are made including technical information. (list of each product with a good quality photo, listed alphabetically or strategically.</h1>
-    <footer>
-        <h4>Quick links will be placed here in the footer, along with contact info and a scroll to top button.</h4>
-    </footer>
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">All Products <i class="fa fa-bars"></i></span>
+
+      <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right" style="display:none;padding-top:105px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-black w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center navItems">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Featured Products</a>
+      <a href="#gablevents" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
+      <a href="#shutters" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Shutters</a>
+      <a href="#accessdoors" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Access Doors</a>
+      <a href="Shipping Policies" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Shipping Policies</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+     <!-- Header Section -->
+     <header  class="header">
+        <a href="#" class="logo">
+            <h2>Kimball Designs</h2>
+        </a>
+    </header>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
+
+
+<!-- Sidebar with image 
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgShutter" title="Plank Shutters"></div>
+  </nav> -->
+
+    <!-- Main Content Section -->
+    <!-- might substitute with the following image<div class="image-container">
+        <img src="/gallery_images/plankshutterKimball Designs.JPG" alt="Company Image" class="image">
+    </div>-->
+    <section class="main-section">
+        
+        <div style="background-position: center;background-size: contain;background-repeat:no-repeat;display:flex;align-self:center;height:600px;">
+            <img src="/gallery_images/plankshutterKimball Designs.JPG" alt="Company Image" class="image">
+        </div>
+
+        <div class="text-container">
+            <h2 class="page-title">Page Title</h2>
+            <h3 class="small-header">Small Header Under Title</h3>
+            <p class="content-paragraph">
+                This is a sample paragraph to describe something about the company.
+            </p>
+            <ul class="bullet-points">
+                <li>First bullet point</li>
+                <li>Second bullet point</li>
+                <li>Third bullet point</li>
+            </ul>
+        </div>
+    </section>
+    <!------------ Alternating shutter product content -------------->
+    
+    <section class="alternating-layout" style="width:100%;margin:0;display:flex;justify-content:center;flex-direction:column;">
+        
+        <div class="content-container" style="width:80%;align-self: center;">
+            <!-- First Pair: Paragraph Left, Image Right -->
+            <div class="pair reverse">
+                <div class="text">
+                    <p>This is a paragraph on the left side. It gives some explanation or information about the image on the right.</p>
+                </div>
+                <div class="image">
+                    <img src="/product_images/bahamashutter.jpeg" alt="Sample Image 1">
+                </div>
+            </div>
+    
+            <!-- Second Pair: Paragraph Right, Image Left -->
+            <div class="pair mobile-reverse">
+                <div class="text">
+                    <p>This is a paragraph on the right side. It provides context for the image on the left.</p>
+                </div>
+                <div class="image">
+                    <img src="/product_images/bahamashutter.jpeg" alt="Sample Image 2">
+                </div>
+            </div>
+
+            <!------- third pair ------->
+            <div class="pair reverse">
+                <div class="text">
+                    <p>This is a paragraph on the left side. It gives some explanation or information about the image on the right.</p>
+                </div>
+                <div class="image">
+                    <img src="/product_images/bahamashutter.jpeg" alt="Sample Image 1">
+                </div>
+            </div>
+        </div>
+    </section>    
+
+
+
+      <!------------- Footer -------------->
+      <footer class="bg-color w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" style="margin: 0;">
+        <h6 class="bg-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod qui numquam expedita natus obcaecati consequuntur dolorem velit modi voluptate suscipit, et vitae debitis pariatur praesentium tenetur in doloribus earum. Nesciunt!</h6>
+      
+      </footer>
+
+    <!----------Javascript and JS Links -------------->
+    <script src="/js/main.js"></script>
+    <script>
+        // Open and close sidebar
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "60%";
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    
 </body>
 </html>
