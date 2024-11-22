@@ -6,7 +6,6 @@
 }
 
 /* hero section */
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh; /* Full viewport height */
@@ -806,11 +805,24 @@ footer {
   width: 100%;
 }
 
+.header .logo h2 {
+  font-size: 26px;
+  text-shadow:
+  6px 6px 10px rgba(0,0,0,0.2);
+  transform: perspective(500px) rotateX(-10deg) scale(1.06); /* Slight 3D rotation */
+
+}
+
+.hero {
+  height: 90vh};
+}
 .hero-background {
-  background-position: left;
+  background-position: right;
+  height: 90vh;
 }
 .hero h1 {
-  font-size: 30px;
+  
+  font-size: 36px;
   margin-bottom: 15px;
 }
 .hero p {
