@@ -863,25 +863,30 @@ footer {
 .hero, .home-hero {
   height: 90vh;
 }
-.hero-background, .home-hero-background {
+.hero-background {
   background-position: right;
   height: 90vh;
 }
+
+.home-hero-background {
+  background-position: center;
+  height: 90vh;
+}
 .home-hero h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 .hero h2, .home-hero h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .hero p, .home-hero p {
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .cta-button, .cta-all-button {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .mobileHomeHero {
