@@ -38,8 +38,8 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.301)
 }
-
-.home-hero {
+/* home hero*/
+.hero {
   position: relative;
   height: 100vh; /* Full viewport height */
   display: flex; 
@@ -50,7 +50,6 @@
   background-color: rgba(0, 0, 0, 0.419)
 }
 
-/* Blurred background */
 .hero-background {
   position: absolute;
   top: 0;
@@ -93,37 +92,29 @@
   margin-bottom: 20px;
 }
 
-.home-hero h1 {
+.hero h1 {
   font-size: 60px;
   margin-bottom: 20px;
 }
 
-.home-hero h2 {
-  font-size: 28px;
+.hero h2 {
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
-.home-hero p {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
 .hero p {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cta-button {
-  padding: 15px 30px;
+  padding: 10px 20px;
   background-color: orange;
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
@@ -860,7 +851,7 @@ footer {
 
 }
 
-.hero, .home-hero {
+.hero {
   height: 90vh;
 }
 .hero-background {
@@ -872,15 +863,15 @@ footer {
   background-position: center;
   height: 90vh;
 }
-.home-hero h1 {
+.hero h1 {
   font-size: 36px;
   margin-bottom: 30px;
 }
-.hero h2, .home-hero h2 {
+.hero h2 {
   font-size: 30px;
   margin-bottom: 30px;
 }
-.hero p, .home-hero p {
+.hero p {
   font-size: 24px;
   margin-bottom: 30px;
 }
