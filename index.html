@@ -45,7 +45,7 @@
     <div class="w3-bar-block w3-center navItems">
       <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
       <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Featured Products</a>
-      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
+      <a href="/product_pages/vents.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
       <a href="/product_pages/shutters.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Shutters</a>
       <a href="#accessdoors" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Access Doors</a>
       <a href="Shipping Policies" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Shipping Policies</a>
@@ -53,23 +53,35 @@
     </div>
   </nav>
   
+  <!------ Homepage Mobile Header ---------->
+   <section class="mobileHomeHero">
+    <div class="mobileHero-background"></div> <!-- Blurred background -->
+    <div class="mobileHero-content">
+        <h1>Your Trusted Manufacturer for Gable Vents, Shutters, and Access Doors</h1>
+        <p>High-quality, custom solutions for all your building needs. Let's build something great together!</p>
+        <a href="#products" class="mobileCta-all-button">Explore All Products</a>
+    </div>
+   
+</section>
   <!-- Page Content -->
   <div class="w3-main w3-padding-large bg-orange" style="margin-left:40%;">
   
     <!-- Menu icon to open sidebar -->
-    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">All Products <i class="fa fa-bars"></i></span>
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">Products <i class="fa fa-bars"></i></span>
   
   
     <!-- Header -->
-    <header class="w3-container w3-center" id="home">
+    <header class="w3-container w3-center mobile-hide" id="home">
       <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
-      <p class="little-title">Reliable, High-Quality Custom Manufacturing of Gable Vents, Shutters, and More.</p>
+      <p class="little-title">Your Trusted Manufacturer for Custom Gable Vents, Shutters, and More.</p>
       <img src="gallery_images/kdesignhousetwo.JPEG" class="w3-image w3-hide-large w3-hide-medium w3-round mobileImg">
       
+      <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
+        <!--
       <button class="w3-button w3-light-grey w3-padding-medium w3-margin-top" style="border-radius:12px; box-shadow: 1px 1px 1px .5px;">
         <i class="fa fa-download"></i> Download Product Catalog
       </button>
-      
+      -->
     </header>
 
   </div>
