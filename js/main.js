@@ -56,12 +56,12 @@ function handleScroll() {
 const shutterTitle = document.getElementById('shutter-title');
 
 // Function to handle scroll event
-function handleScroll() {
+function handleScrollTwo() {
     // Get the scroll position
-    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    const scrollYY = window.scrollYY || document.documentElement.scrollTop;
 
     // Add or remove the 'scrolled' class based on scroll position
-    if (scrollY > 10) { // Adjust the scroll position threshold (100px here)
+    if (scrollYY > 10) { // Adjust the scroll position threshold (100px here)
         shutterTitle.classList.add('scrolled');
     } else {
         shutterTitle.classList.remove('scrolled');
@@ -70,6 +70,7 @@ function handleScroll() {
 
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScrollTwo);
 
 // Carousel Code 
 document.addEventListener('DOMContentLoaded', () => {
