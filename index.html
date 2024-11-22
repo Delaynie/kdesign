@@ -21,21 +21,13 @@
 </head>
 <body id="grad1">
 
-    <!------------ Loading button for future use ------------
-    <button class="buttonload">
-    <i class="fa-solid fa-spinner fa-spin"></i> LOADING
-</button>
----------------------------->
     <!------------- To the Top button ---------------------->
 
     <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
 
     <!----------------- HEADER ----------------->
 
-<!-- Sidebar with image --> 
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-    <div class="bgimg" title="Triangle Gable Vent Project"></div>
-  </nav>
+
   
   <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
   <nav class="w3-sidebar w3-black w3-animate-right" style="display:none;padding-top:150px;right:0;z-index:10" id="mySidebar">
@@ -53,38 +45,48 @@
     </div>
   </nav>
   
-  <!------ Homepage Mobile Header ---------->
-   <section class="mobileHomeHero">
-    <div class="mobileHero-background"></div> <!-- Blurred background -->
-    <div class="mobileHero-content">
-        <h1>Your Trusted Manufacturer for Gable Vents, Shutters, and Access Doors</h1>
+  <section class="home-hero mobile-display" style="color: blue;">
+    <div class="home-hero-background"></div>
+    <div class="home-hero-content">
+        <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
+        <h2>Your Trusted Manufacturer for Gable Vents, Shutters, and Access Doors</h2>
         <p>High-quality, custom solutions for all your building needs. Let's build something great together!</p>
-        <a href="#products" class="mobileCta-all-button">Explore All Products</a>
+        <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
+    </div>
+   
+</section>
+  <!------ Homepage Mobile Header ---------->
+   <section class="home-hero mobile-hide">
+    <div class="home-hero-background"></div>
+    <div class="home-hero-content">
+        <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
+        <h2>Your Trusted Manufacturer for Gable Vents, Shutters, and Access Doors</h2>
+        <p>High-quality, custom solutions for all your building needs. Let's build something great together!</p>
+        <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
     </div>
    
 </section>
   <!-- Page Content -->
-  <div class="w3-main w3-padding-large bg-orange" style="margin-left:40%;">
   
     <!-- Menu icon to open sidebar -->
     <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">Products <i class="fa fa-bars"></i></span>
   
   
-    <!-- Header -->
+    <!-- Header 
     <header class="w3-container w3-center mobile-hide" id="home">
       <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
       <p class="little-title">Your Trusted Manufacturer for Custom Gable Vents, Shutters, and More.</p>
       <img src="gallery_images/kdesignhousetwo.JPEG" class="w3-image w3-hide-large w3-hide-medium w3-round mobileImg">
       
       <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
-        <!--
+        <
       <button class="w3-button w3-light-grey w3-padding-medium w3-margin-top" style="border-radius:12px; box-shadow: 1px 1px 1px .5px;">
         <i class="fa fa-download"></i> Download Product Catalog
       </button>
       -->
-    </header>
+    
 
-  </div>
+  
 
     <!----------------- MOBILE HEADER (if needed) ----------------->
     <!----------------- Introduction area ----------------->
@@ -211,6 +213,16 @@
     </div>
 </section>
 
+<section>
+    <div class="mobile-hide" style="background-color: white; color: blue;">
+        This will only show up on desktop! Hopefully.
+    </div>
+</section>
+<section>
+    <div class="mobile-display" style="background-color: blue; color: white;">
+        This will only show up on mobile! Hopefully.
+    </div>
+</section>
 
     <!--------------- FOOTER ----------------->
       <!-- Footer -->
