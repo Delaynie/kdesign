@@ -52,6 +52,22 @@ function handleScroll() {
     }
 }
 
+// Select the title element
+const shutterTitle = document.getElementById('shutter-title');
+
+// Function to handle scroll event
+function handleScroll() {
+    // Get the scroll position
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+    // Add or remove the 'scrolled' class based on scroll position
+    if (scrollY > 10) { // Adjust the scroll position threshold (100px here)
+        shutterTitle.classList.add('scrolled');
+    } else {
+        shutterTitle.classList.remove('scrolled');
+    }
+}
+
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
 
