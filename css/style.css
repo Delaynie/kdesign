@@ -5,9 +5,7 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-/*mobile Homepage header */
-
-
+/* Header CTA and menu styling */
 .cta-all-button {
   padding: 10px 24px;
   background-color: rgb(240, 145, 44);
@@ -21,13 +19,13 @@
 }
 
 .cta-all-button:hover {
-  background-color: rgb(243, 150, 51);
+  background-color: rgb(223, 127, 25);
   transform: perspective(500) rotate(0deg) scale(1.3);
   text-shadow:
   6px, 6px, 10px rgba(0, 0, 0, 0.301);
 }
 
-/* hero section */
+/* hero header */
 .hero {
   position: relative;
   height: 100vh; /* Full viewport height */
@@ -63,7 +61,7 @@
   z-index: -1;
 }
 
-/* Content above the blurred background */
+/* Content above the background */
 .hero-content {
   z-index: 2; /* Ensure content stays on top of the background */
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text for readability */
@@ -71,8 +69,8 @@
 }
 
 .home-hero-content {
-  z-index: 2; /* Ensure content stays on top of the background */
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text for readability */
+  z-index: 2;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   width: 75vw;
 }
 
@@ -98,7 +96,7 @@
 
 .cta-button {
   padding: 10px 20px;
-  background-color: orange;
+  background-color: rgb(240, 145, 44);
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -107,24 +105,11 @@
 }
 
 .cta-button:hover {
-  background-color: rgb(230, 150, 2);
+  background-color: rgb(223, 127, 25);
+  transform: perspective(500) scale(1.1);
 }
 
-
-
-/* header colors */
-/* background-color: rgb(14, 31, 113);
-    color:  rgb(225,225,225);
-    /*icon/accent color ideas:
-    red - rgb(144, 50, 61);
-    orange - rgb(229, 122, 68); 
-    green - rgb(86, 110, 61); */
-/* accented background color ideas */
-/* white/grey rgb(225,225,225);
-  blue - rgb(34, 116, 165);
-  darker blue - rgb(3, 63, 99); */
-
-  /* -------- Nav and Header Styling ---------- */
+  /* -------- Nav Styling ---------- */
   .hoverX:hover {
     transform: perspective(500px) scale(1.3);
   }
@@ -153,7 +138,8 @@ a {
     text-shadow: 
         2px 2px 5px rgba(0, 0, 0, 0.2), 
         4px 4px 8px rgba(0, 0, 0, 0.3),
-        6px 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+        6px 6px 10px rgba(0, 0, 0, 0.4),
+        10px 10px 16px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -169,7 +155,7 @@ a {
   text-shadow: 
       2px 2px 5px rgba(0, 0, 0, 0.2), 
       4px 4px 8px rgba(0, 0, 0, 0.3),
-      6px 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+      8px 8px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -177,7 +163,7 @@ a {
   text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.1), /* Light shadow */
         4px 4px 6px rgba(0, 0, 0, 0.15), /* Deeper shadow */
-        6px 6px 8px rgba(0, 0, 0, 0.2); /* Even deeper shadow for 3D effect */
+        10px 10px 14px rgba(0, 0, 0, 0.2); /* Even deeper shadow for 3D effect */
     transform: perspective(500px) rotateX(5deg); /* Slight 3D rotation */
     
 }
@@ -190,7 +176,7 @@ a {
   padding-bottom: 10px;
   text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.1), /* Light shadow */
-        4px 4px 8px rgba(0, 0, 0, 0.15), /* Deeper shadow */
+        10px 10px 14px rgba(0, 0, 0, 0.15), /* Deeper shadow */
     
 }
 
@@ -254,6 +240,11 @@ a {
   cursor: pointer;
   left:0;
 }
+
+.buttonHome:hover {
+  transform: perspective(500px) rotateX(0deg) scale(1.1);
+}
+
 .buttonMenu {
   text-align: center;
   font-family: 'fira sans', sans-serif;
@@ -828,7 +819,7 @@ footer {
   /*background-color: rgba(0, 0, 0, 0.301);*/
 }
 .hero-background {
-  background-position: top;
+  background-position: 80%;
   height: 90vh;
 }
 
