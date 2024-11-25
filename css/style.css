@@ -656,6 +656,13 @@ a {
     font-size: 36px;
   }
 
+  .buttonMenu {
+    margin-top: 12px;
+  }
+  .buttonHome {
+    margin-top: 12px;
+  }
+
   /* ----- side image ------- */
 .mobileImg {
   background-position: center;
