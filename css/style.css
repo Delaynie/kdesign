@@ -89,8 +89,8 @@
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 32px;
+.hero a {
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -266,55 +266,9 @@ a {
 
 .buttonMenu:hover {
   transform: perspective(500px) rotateX(0deg) scale(1.08);
-  
 }
-/* --------------All font variables, delete what you won't 
-need once you narrow down a font -----------------------*/
 
-/* Try to find a thinner variation
-.dm-sans {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  */
+/* Font Weights and Styles */
   
   .fira-sans-thin {
     font-family: "Fira Sans", sans-serif;
@@ -806,17 +760,9 @@ footer {
   width: 100%;
 }
 
-.header .logo h2 {
-  font-size: 26px;
-  text-shadow:
-  6px 6px 10px rgba(0,0,0,0.2);
-  transform: perspective(500px) rotateX(-10deg) scale(1.06); /* Slight 3D rotation */
-
-}
-
 .hero {
   height: 90vh;
-  /*background-color: rgba(0, 0, 0, 0.301);*/
+  background-color: rgba(0, 0, 0, 0.28);
 }
 .hero-background {
   background-position: 80%;
@@ -828,15 +774,17 @@ footer {
   height: 90vh;
 }
 .hero h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
+
 .hero h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
-.hero p {
-  font-size: 24px;
+
+.hero a {
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
