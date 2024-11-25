@@ -4,7 +4,7 @@
 <!-- Kimball Design website head information, might need some updating since I haven't stayed on top of new trends -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Triangle Gable Vents</title>
+<title>Kimball Designs Triangle Gable Vents</title>
 <!-- FONTAWESOME, probably need an updated link 10-18-24 -->
 <script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
 
@@ -13,14 +13,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<!-- w3 CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <!-------------------- CSS Sheets ------------------------->
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 </head>
 <body>
-    <h1 class="product"> Different triangle pitches and sizes offered, along with any info. (list of each product with a good quality photo, listed alphabetically or strategically.</h1>
-    <footer>
-        <h4>Quick links will be placed here in the footer, along with contact info and a scroll to top button.</h4>
-    </footer>
+    <a href="/index.html" title="Takes you to the homepage" class="buttonHome w3-top w3-medium" style="width:auto;position:left;z-index:9;margin-top:16px;margin-right: 16px;"><i class="fa fa-home"></i></a>
+
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;margin-top:16px;margin-right: 16px;" onclick="openNav()">All Products <i class="fa fa-bars"></i></span>
+    
+      <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right" style="display:none;padding-top:105px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-black w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center navItems">
+      <a href="/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="/product_pages/all_products.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">All Products</a>
+      <a href="/product_pages/vents.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
+      <a href="/product_pages/shutters.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Shutters</a>
+      <a href="#accessdoors" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Access Doors</a>
+      <a href="Shipping Policies" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Shipping Policies</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
+    
+  <!-- Hero Section -->
+   <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <h1 class="bigish-title" id="shutter-title">Kimball Designs: Triangle Vents</h1>
+        <h2 class="little-title">Trusted quality, custom options.</h2>
+        <a href="#products" class="cta-button">Request a Quote</a>
+    </div>
+   
+</section>
+
+   
 </body>
 </html>
