@@ -780,9 +780,17 @@ footer {
   background-position: center;
   height: 90vh;
 }
+
 .hero h1 {
   font-size: 44px;
   margin-bottom: 15px;
+}
+
+.big-title {
+  padding-top: 60px;
+}
+.bigish-title {
+  padding-top: 40px;
 }
 
 .hero h2 {
