@@ -825,9 +825,10 @@ footer {
 
 .hero {
   height: 90vh;
+  /*background-color: rgba(0, 0, 0, 0.301);*/
 }
 .hero-background {
-  background-position: right;
+  background-position: top;
   height: 90vh;
 }
 
