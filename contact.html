@@ -49,7 +49,7 @@
     <div class="hero-background" style="background-image: url('/gallery_images/plankshutterKimball\ Designs.JPG');"></div>
     <div class="hero-content">
         <h1 class="bigish-title" id="shutter-title">Kimball Designs</h1>
-        <h2 class="little-title">If you have questions or you're ready to request a quote, we're here to help.</h2>
+        <h2 class="little-title">From inquiries to orders, we're here for you—reach out below to get started.</h2>
     </div>
    
 </section>
@@ -60,49 +60,66 @@
     </section>
     ----------->
 
-    <section class="contact-info">
-        <h2>Get in Touch</h2>
-        <div class="contact-methods">
-            <div class="contact-item">
-                <h3>Email Us</h3>
-                <p>Feel free to reach out to us at <a href="mailto:info@shuttersandvents.com">email</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>Call Us</h3>
-                <p>Speak with one of our experts at <a href="tel:+1234567890">(123) 456-7890</a></p>
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <div class="contact-methods">
+                <div class="contact-item">
+                    <h3>Email Us</h3>
+                    <p>Feel free to reach out to us at <a href="mailto:info@shuttersandvents.com">info@shuttersandvents.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Call Us</h3>
+                    <p>Speak with one of our experts at <a href="tel:+1234567890">(123) 456-7890</a></p>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section class="contact-form">
-        <h2>Request a Quote</h2>
-        <p>we'll get started on your custom gable vent or shutter right away—complete with a personalized quote and all the details you'll need.</p>
-        <form action="/submit-form" method="POST">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Your Phone (Optional):</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="message">Tell Us About Your Project:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+        <div class="contact-form">
+            <h2>Request a Callback</h2>
+            <p>Fill out for the form and we'll reach out to you.</p>
+            <form action="/submit-form" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone (Optional):</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Enter Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
     </section>
+   
 <!--------------- FOOTER ----------------->
       <!-- Footer -->
       <footer class="bg-color w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
         <h6 class="bg-color"> &copy;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod qui numquam expedita natus obcaecati consequuntur dolorem velit modi voluptate suscipit, et vitae debitis pariatur praesentium tenetur in doloribus earum. Nesciunt!</h6>
       <!-- End footer -->
       </footer>
+
+      <!----------Javascript and JS Links -------------->
+    <script src="js/main.js"></script>
+    <script>
+        // Open and close sidebar
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "60%";
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
