@@ -5,16 +5,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Kimball Designs</title>
-<!-- FONTAWESOME, probably need an updated link 10-18-24 -->
-<script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
-
 <!-- Font Choices - Work sans, Fira sans, roboto, inter, dm, montserrat -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<!-------------------- CSS Sheets ------------------------->
+<!-------------------- CSS and Template Sheets ------------------------->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-------------------- Font Awesome (for icons) -------------------->
 <script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
@@ -22,10 +20,89 @@
 </head>
 
 <body>
-    <h1>This page will contain contact information, another place to request a quote, and a form to fill out.</h1>
 
-    <footer>
-        <h4>Quick links will be placed here in the footer, along with contact info and a scroll to top button.</h4>
-    </footer>
+        
+    <a href="/index.html" title="Takes you to the homepage" class="buttonHome w3-top w3-medium" style="width:auto;position:left;z-index:9;margin-top:16px;margin-right: 16px;"><i class="fa fa-home"></i></a>
+
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;margin-top:16px;margin-right: 16px;" onclick="openNav()">All Products <i class="fa fa-bars"></i></span>
+    
+      <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right" style="display:none;padding-top:105px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-black w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center navItems">
+      <a href="/index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="/product_pages/all_products.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">All Products</a>
+      <a href="/product_pages/vents.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gable Vents</a>
+      <a href="#shutters" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Shutters</a>
+      <a href="#accessdoors" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Access Doors</a>
+      <a href="Shipping Policies" class="w3-bar-item w3-button w3-hover-black w3-text-grey" onclick="closedNav()">Shipping Policies</a>
+      <a href="/contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
+    
+  <!-- Hero Section -->
+   <section class="hero">
+    <div class="hero-background" style="background-image: url('/gallery_images/plankshutterKimball\ Designs.JPG');"></div>
+    <div class="hero-content">
+        <h1 class="bigish-title" id="shutter-title">Kimball Designs</h1>
+        <h2 class="little-title">If you have questions or you're ready to request a quote, we're here to help.</h2>
+    </div>
+   
+</section>
+    <!-- not necessary intro but maybe you can do something else with it 
+    <section class="intro">
+        <h1>Contact Us</h1>
+        <p>Have questions or ready to start your next big project? We're here to help!</p>
+    </section>
+    ----------->
+
+    <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <div class="contact-methods">
+            <div class="contact-item">
+                <h3>Email Us</h3>
+                <p>Feel free to reach out to us at <a href="mailto:info@shuttersandvents.com">email</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Call Us</h3>
+                <p>Speak with one of our experts at <a href="tel:+1234567890">(123) 456-7890</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Request a Quote</h2>
+        <p>we'll get started on your custom gable vent or shutter right away—complete with a personalized quote and all the details you'll need.</p>
+        <form action="/submit-form" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Tell Us About Your Project:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+<!--------------- FOOTER ----------------->
+      <!-- Footer -->
+      <footer class="bg-color w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+        <h6 class="bg-color"> &copy;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod qui numquam expedita natus obcaecati consequuntur dolorem velit modi voluptate suscipit, et vitae debitis pariatur praesentium tenetur in doloribus earum. Nesciunt!</h6>
+      <!-- End footer -->
+      </footer>
+
 </body>
 </html>
