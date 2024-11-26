@@ -68,9 +68,62 @@ function handleScrollTwo() {
     }
 }
 
+// Select the title element
+const contactTitle = document.getElementById('contact-title');
+
+// Function to handle scroll event
+function handleScrollThree() {
+    // Get the scroll position
+    const scrollYYY = window.scrollYYY || document.documentElement.scrollTop;
+
+    // Add or remove the 'scrolled' class based on scroll position
+    if (scrollYYY > 10) { // Adjust the scroll position threshold (100px here)
+        contactTitle.classList.add('scrolled');
+    } else {
+        contactTitle.classList.remove('scrolled');
+    }
+}
+
+// Select the title element
+const productTitle = document.getElementById('product-title');
+
+// Function to handle scroll event
+function handleScrollFour() {
+    // Get the scroll position
+    const scrollYYYY = window.scrollYYYY || document.documentElement.scrollTop;
+
+    // Add or remove the 'scrolled' class based on scroll position
+    if (scrollYYYY > 10) { // Adjust the scroll position threshold (100px here)
+        productTitle.classList.add('scrolled');
+    } else {
+        productTitle.classList.remove('scrolled');
+    }
+}
+
+// Select the title element
+const gableTitle = document.getElementById('gable-title');
+
+// Function to handle scroll event
+function handleScrollFive() {
+    // Get the scroll position
+    const scrollYYYYY = window.scrollYYYYY || document.documentElement.scrollTop;
+
+    // Add or remove the 'scrolled' class based on scroll position
+    if (scrollYYYYY > 10) { // Adjust the scroll position threshold (100px here)
+        gableTitle.classList.add('scrolled');
+    } else {
+        gableTitle.classList.remove('scrolled');
+    }
+}
+
+
 // Listen for the scroll event
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('scroll', handleScrollTwo);
+window.addEventListener('scroll', handleScrollThree);
+window.addEventListener('scroll', handleScrollFour);
+window.addEventListener('scroll', handleScrollFive);
+
 
 // Carousel Code 
 document.addEventListener('DOMContentLoaded', () => {
