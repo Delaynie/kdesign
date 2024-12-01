@@ -914,10 +914,12 @@ button.submit-btn:hover {
 /* Reverse the order for the first pair */
 .reverse {
     flex-direction: column-reverse;
+    justify-content: center;
 }
 /* Reverse the order of the second pair */
 .mobile-reverse {
   flex-direction: column-reverse;
+  justify-content: center;
 }
 
 /* Adjust the padding for text and image on mobile */
