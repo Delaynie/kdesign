@@ -900,8 +900,15 @@ button.submit-btn:hover {
 .alternating-layout {
   width: 100%;
   display: flex;
-  justify-content: center;
   margin: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+  width: 100%;
 }
 
 /* Reverse the order for the first pair */
