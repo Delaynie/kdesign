@@ -906,7 +906,7 @@ button.submit-btn:hover {
 }
 
 .image {
-  height: 250px;
+  height: 200px;
 }
 
 .mobileText {
@@ -954,11 +954,6 @@ button.submit-btn:hover {
 .text-container {
   width: 100%;
   padding-left: 0;
-}
-
-footer {
-  margin: auto;
-  width: 100%;
 }
 
 .hero {
