@@ -867,31 +867,6 @@ button.submit-btn:hover {
   width: fit-content;
 }
 
-.prev-btn, .next-btn {
-  display: none; /* Hide on mobile as swipe should be used instead */
-}
-
-.featured-products-carousel {
-    width: 100%;
-    margin:auto;
-}
-.carousel-item {
-    flex-direction: column;
-    text-align: center;
-}
-.featured-text {
-    width: 100%;
-    padding: 10px;
-}
-.featured-image {
-    width: auto;
-    height: auto;
-    margin-bottom: 20px;
-}
-.section-title {
-    font-size: 14px;
-}
-
 /* horizontal scroll mobile styling */
 .image-section {
   margin: auto;
@@ -910,15 +885,16 @@ button.submit-btn:hover {
 }
 
 .mobileText {
-  margin: auto;
+  margin: 100%;
 }
 
 .alternating-layout {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  justify-content: center;
+  margin: 100%;
 }
 
-/* Reverse the order for the second pair to match mobile requirement */
+/* Reverse the order for the first pair */
 .reverse {
     flex-direction: column-reverse;
 }
