@@ -5,6 +5,12 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 /* Header CTA and menu styling */
 .cta-all-button {
   padding: 10px 24px;
@@ -548,7 +554,7 @@ footer h6 {
 /* Pair Layout (default: Text left, Image right) */
 .pair {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
@@ -557,7 +563,6 @@ footer h6 {
 .reverse {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: row-reverse;
 }
 
@@ -578,6 +583,7 @@ footer h6 {
 .image {
   flex: 1;
   padding: 20px;
+  
 }
 
 .image img {
@@ -974,12 +980,6 @@ button.submit-btn:hover {
 
 .cta-button, .cta-all-button {
   font-size: 14px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin: 0;
 }
 
 /* contact page mobile */
