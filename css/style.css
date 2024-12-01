@@ -905,7 +905,7 @@ button.submit-btn:hover {
 
 .content-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 40px;
   margin: 0;
   width: 100%;
