@@ -512,6 +512,15 @@ a {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  padding: 40px;
+  text-align: center;
+}
+footer h6 {
+  width: 80%;
+  justify-self: center;
+}
 
 
 /* --------------------- Alternating Section CSS ------------- */
@@ -751,6 +760,81 @@ button.submit-btn {
 
 button.submit-btn:hover {
     background-color: #45a049;
+}
+
+/* potential background */
+.sectionLines {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background */
+  padding-left: 50px; /* Space for the lines */
+}
+
+/* Add lines to the section with .with-lines class */
+.with-lines {
+  position: relative;
+}
+
+.with-lines .line {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: orange;
+  z-index: -1;
+  animation: fadeLines 7s infinite linear;
+}
+
+/* Position lines with custom offsets */
+.with-lines .line.line1 {
+  left: 10px;
+  background-color: rgb(199, 197, 197);
+}
+
+.with-lines .line.line2 {
+  left: 20px;
+}
+
+.with-lines .line.line3 {
+  left: 30px;
+}
+
+.with-lines .line.line4 {
+  left: 40px;
+  background-color: rgb(199,197,197);
+}
+
+.with-lines .line.line5 {
+  left: 50px;
+}
+.with-lines .line.line6 {
+  background-color: rgb(199,197,197);
+  right: 10px;
+}
+.with-lines .line.line7 {
+  right: 20px;
+}
+.with-lines .line.line8 {
+  right: 30px;
+}
+.with-lines .line.line9 {
+  right: 40px;
+  background-color: rgb(199,197,197);
+}
+.with-lines .line.line10 {
+  right: 50px;
+}
+
+/* Simple animation for the vertical lines */
+@keyframes fadeLines {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 /* Responsive Design */
