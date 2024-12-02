@@ -1001,7 +1001,17 @@ button.submit-btn:hover {
 
 .contact-methods {
   flex-direction: column;
-  align-items: center;
+}
+
+button.submit-btn {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
 }
 
 .mobile-display {
