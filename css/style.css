@@ -784,6 +784,10 @@ button.submit-btn:hover {
     background-color: #45a049;
 }
 
+.big-image {
+  margin-left: 20%;
+}
+
 /* potential background */
 .sectionLines {
   position: relative;
@@ -1019,6 +1023,10 @@ input[type="email"],
 input[type="tel"],
 textarea {
   width: 100%;
+}
+
+.image.big-image {
+  margin-left: 0;
 }
 
 .mobile-display {
