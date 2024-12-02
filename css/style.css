@@ -772,7 +772,6 @@ button.submit-btn:hover {
 .sectionLines {
   position: relative;
   z-index: 1; /* Ensure content is above the background */
-  padding-left: 50px; /* Space for the lines */
 }
 
 /* Add lines to the section with .with-lines class */
