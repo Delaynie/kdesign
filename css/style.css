@@ -7,12 +7,17 @@
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   flex-direction: column;
   margin: 0;
-  text-align: center;
   padding: 30px;
+}
+.transform{
+  transition: all 0.3s ease-in-out;
+}
+.transform:hover {
+  transform: perspective(500px) scale(1.1);
 }
 
 /* Header CTA and menu styling */
@@ -793,8 +798,10 @@ button.submit-btn:hover {
 }
 
 .bg-color {
-  background-image: linear-gradient(to right, rgb(231, 150, 1), rgb(255, 255, 255)); /* rgb(245,153,6), rgb(5, 30, 99), */
-  color: #333;
+  background-image:linear-gradient(to right, rgb(46, 46, 46), rgb(138, 137, 135)); /*
+  background-image: linear-gradient(to left, black, rgb(225, 225, 225), rgb(247, 245, 245)); /* rgb(245,153,6), rgb(5, 30, 99), */
+  color: white;
+  border-top: 2px solid orange;
 }
 .bg-linear {
   background-image: linear-gradient(to left, rgb(255,254,253), rgb(240, 239, 238));
