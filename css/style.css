@@ -212,7 +212,7 @@ a {
         4px 4px 6px rgba(0, 0, 0, 0.15), /* Deeper shadow */
         10px 10px 14px rgba(0, 0, 0, 0.2); /* Even deeper shadow for 3D effect */
     transform: perspective(500px) rotateX(5deg); /* Slight 3D rotation */
-    
+    z-index: 10;
 }
 
 .little-title {
@@ -688,7 +688,8 @@ a {
 .contact-info {
     padding: 40px 20px;
     background-color: #fff;
-    margin: 20px auto;
+    margin: 0 auto 25px auto;
+    border-top: 2px solid orange;
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -731,7 +732,7 @@ a {
 .contact-form {
     padding: 40px 20px;
     background-color: #fff;
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1062,6 +1063,10 @@ textarea {
 
 .image.big-image {
   margin-left: 0;
+}
+
+footer h6 {
+  text-align: left;
 }
 
 .mobile-display {
