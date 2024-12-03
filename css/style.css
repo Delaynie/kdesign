@@ -212,7 +212,7 @@ a {
         4px 4px 6px rgba(0, 0, 0, 0.15), /* Deeper shadow */
         10px 10px 14px rgba(0, 0, 0, 0.2); /* Even deeper shadow for 3D effect */
     transform: perspective(500px) rotateX(5deg); /* Slight 3D rotation */
-    z-index: 90;
+    z-index: 9;
 }
 
 .little-title {
