@@ -10,8 +10,20 @@ footer {
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   margin: 0;
-  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+footer h6{
+  font-size:14px;
+}
+.tinyFont {
+  font-size: 12px;
+}
+.copy {
+  font-size: 10px;
 }
 .transform{
   transition: all 0.3s ease-in-out;
@@ -129,7 +141,7 @@ footer {
   }
 
   .nav-grad {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.788), rgb(60,60,60), rgba(0, 0, 0, 0.882));
+    background-image: linear-gradient(to top, black, rgb(60,60,60));
     color: white;
   }
 
@@ -798,9 +810,9 @@ button.submit-btn:hover {
 }
 
 .bg-color {
-  background-image:linear-gradient(to right, rgb(46, 46, 46), rgb(138, 137, 135)); /*
-  background-image: linear-gradient(to left, black, rgb(225, 225, 225), rgb(247, 245, 245)); /* rgb(245,153,6), rgb(5, 30, 99), */
-  color: white;
+ /* background-image: linear-gradient(to left, black, rgb(225, 225, 225), rgb(247, 245, 245)); /* rgb(245,153,6), rgb(5, 30, 99), */
+  background-color:black;
+  color: rgb(200,200,200);
   border-top: 2px solid orange;
 }
 .bg-linear {
