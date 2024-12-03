@@ -1,30 +1,30 @@
 const products = [
     {
         id: 1,
-        name: "Classic Gable Vent",
+        name: "Round Gable Vent",
         category: "vent",
-        image: "images/vent1.jpg",
+        image: "/product_images/round cedar vents.jpg",
         description: "A classic design that ensures ventilation and aesthetic appeal for your home."
     },
     {
         id: 2,
-        name: "Decorative Shutter",
+        name: "Bahama Shutter",
         category: "shutter",
-        image: "images/shutter1.jpg",
+        image: "/product_images/bahamashutter.jpeg",
         description: "Custom shutters that add both charm and functionality to your windows."
     },
     {
         id: 3,
-        name: "Modern Gable Vent",
+        name: "Octagon Gable Vent",
         category: "vent",
-        image: "images/vent2.jpg",
+        image: "/product_images/octagon_group_thumb.gif",
         description: "Sleek and modern gable vent designed for better airflow and style."
     },
     {
         id: 4,
         name: "Traditional Shutter",
         category: "shutter",
-        image: "images/shutter2.jpg",
+        image: "/product_images/shutters.jpg",
         description: "A traditional design that enhances the exterior of any home."
     }
 ];
