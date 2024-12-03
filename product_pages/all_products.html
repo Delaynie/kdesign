@@ -54,6 +54,37 @@
    
 </section>
 
+<!-- Main Products Page and Sorter -->
+
+<div class="containerProduct">
+  <h1>Our Products</h1>
+
+  <!-- Filter Dropdown -->
+  <div class="filter-container">
+      <label for="product-filter">Filter Products:</label>
+      <select id="product-filter" onchange="filterProducts()">
+          <option value="all">Show All</option>
+          <option value="vent">Gable Vents</option>
+          <option value="shutter">Shutters</option>
+      </select>
+  </div>
+
+  <!-- Product List -->
+  <div id="product-list" class="product-list">
+      <!-- Products will be inserted here dynamically -->
+  </div>
+
+  <!-- Product Info Modal -->
+  <div id="productModal" class="modal">
+      <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">X</span>
+          <img id="modal-product-image" class="modal-image" src="" alt="Product Image">
+          <h3 id="modal-product-name"></h3>
+          <p id="modal-product-description"></p>
+      </div>
+  </div>
+</div>
+
     <!--------------- FOOTER ----------------->
     <footer class="sectionLines with-lines bg-color">
       <div class="line line1"></div>
@@ -75,6 +106,7 @@
 
 <!----------Javascript and JS Links -------------->
     <script src="/js/main.js"></script>
+    <script src="/js/allProduct.js"></script>
     <script>
         // Open and close sidebar
         function openNav() {
