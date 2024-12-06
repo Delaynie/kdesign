@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<!-- Kimball Design website head information, might need some updating since I haven't stayed on top of new trends -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimball Designs : Technical Information</title>
+
+<!-- Font Choices - Work sans, Fira sans, roboto, inter, dm, montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-------------------- CSS and Template Sheets ------------------------->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-------------------- Font Awesome (for icons) -------------------->
+<script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!------------- To the Top button ---------------------->
+
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
+
+    <!----------------- HEADER ----------------->
+
+
+  
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar nav-grad w3-animate-right" style="display:none;padding-top:150px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="navItems">
+      <a href="/index.html" class="navButton" onclick="closeNav()">Home</a>
+      <a href="/product_pages/all_products.html" class="navButton" onclick="closeNav()">All Products</a>
+      <a href="/product_pages/vents.html" class="navButton" onclick="closeNav()">Gable Vents</a>
+      <a href="/product_pages/shutters.html" class="navButton" onclick="closeNav()">Shutters</a>
+      <a href="/shipping.html" class="navButton" onclick="closedNav()">Shipping Policies</a>
+      <a href="#" class="navButton" onclick="closeNav()">Technical Information</a>
+      <a href="/contact.html" class="navButton" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+  
+  <section class="hero">
+    <div class="home-hero-background"></div>
+    <div class="hero-content">
+        <h1 class="big-title" id="header-title"><b>Kimball Designs</b></h1>
+        <h2>Your Trusted Manufacturer for Gable Vents, Shutters, and More.</h2>
+        <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
+    </div>
+   
+</section>
+
+  <!-- Page Content -->
+  
+    <!-- Menu icon to open sidebar -->
+     <div>
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">Products <i class="fa fa-bars"></i></span>
+</div>
+
+    <!--------------- FOOTER ----------------->
+    <footer class="sectionLines with-lines bg-color">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4 mobile-hide"></div>
+        <div class="line line5 mobile-hide"></div>
+        <h6>Kimball Designs, LLC Custom Manufacturing</h6>
+        <h6 class="tinyFont">Owned and Operated in Northwest Arkansas</h6>
+        <h6 class="copy">Copyright &copy; 2024 All rights reserved.</h6>
+        <div class="line line6"></div>
+        <div class="line line7"></div>
+        <div class="line line8"></div>
+        <div class="line line9 mobile-hide"></div>
+        <div class="line line10 mobile-hide"></div>
+    </footer>
+
+        <div class="line line6 mobile-hide"></div>
+        <div class="line line7 mobile-hide"></div>
+        <div class="line line8 mobile-hide"></div>
+        <div class="line line9 mobile-hide"></div>
+        <div class="line line10 mobile-hide"></div>
+    </section>
+
+      <!----------Javascript and JS Links -------------->
+    <script src="js/main.js"></script>
+    <script>
+        // Open and close sidebar
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "60%";
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -35,7 +35,8 @@
       <a href="/product_pages/all_products.html" class="navButton" onclick="closeNav()">All Products</a>
       <a href="/#" class="navButton" onclick="closeNav()">Gable Vents</a>
       <a href="/product_pages/shutters.html" class="navButton" onclick="closeNav()">Shutters</a>
-      <a href="Shipping Policies" class="navButton" onclick="closedNav()">Shipping Policies</a>
+      <a href="/shipping.html" class="navButton" onclick="closedNav()">Shipping Policies</a>
+      <a href="/technical.html" class="navButton" onclick="closeNav()">Technical Information</a>
       <a href="/contact.html" class="navButton" onclick="closeNav()">Contact</a>
     </div>
   </nav>
@@ -53,6 +54,49 @@
    
 </section>
 
+<!-- Gable Products Page -->
+<section class="sectionLines with-lines">
+
+  <div class="containerProduct">
+    <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4 mobile-hide"></div>
+        <div class="line line5 mobile-hide"></div>
+    <h1>Our Products</h1>
+  
+    <!-- Filter Dropdown -->
+    <div class="filter-container">
+        <label for="gable-filter">Filter Products:</label>
+        <select id="gable-filter" onchange="filterGableProducts()">
+            <option value="all">Show All</option>
+            <option value="roundVent">Round Gable Vents</option>
+            <option value="rectangleVent">Rectangle Gable Vents</option>
+        </select>
+    </div>
+  
+    <!-- Product List -->
+    <div id="gable-list" class="gable-list">
+        <!-- Products will be inserted here dynamically -->
+    </div>
+  
+    <!-- Product Info Modal -->
+    <div id="gableProductModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <img id="gablemodal-product-image" class="modal-image" src="" alt="Product Image">
+            <h3 id="gablemodal-product-name"></h3>
+            <p id="gablemodal-product-description"></p>
+        </div>
+    </div>
+  </div>
+  <div class="line line6"></div>
+        <div class="line line7"></div>
+        <div class="line line8"></div>
+        <div class="line line9 mobile-hide"></div>
+        <div class="line line10 mobile-hide"></div>
+  
+  </section>
 
     <!--------------- FOOTER ----------------->
     <footer class="sectionLines with-lines bg-color">
@@ -73,6 +117,7 @@
     
 <!----------Javascript and JS Links -------------->
     <script src="/js/main.js"></script>
+    <script src="/js/gableProducts.js"></script>
     <script>
         // Open and close sidebar
         function openNav() {
