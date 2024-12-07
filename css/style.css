@@ -205,7 +205,7 @@ a {
       4px 4px 8px rgba(0, 0, 0, 0.3),
       8px 8px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
-  z-index:8;
+  z-index:2;
 }
 
 .scrolled {
@@ -214,7 +214,7 @@ a {
         4px 4px 6px rgba(0, 0, 0, 0.15), /* Deeper shadow */
         10px 10px 14px rgba(0, 0, 0, 0.2); /* Even deeper shadow for 3D effect */
     transform: perspective(500px) rotateX(5deg); /* Slight 3D rotation */
-    z-index: 8;
+    z-index: 2;
 }
 
 .little-title {
@@ -281,7 +281,7 @@ a {
   transition: all 0.3s ease;
   cursor: pointer;
   left:0;
-  z-index: 99;
+  z-index: 9;
 }
 
 .buttonHome:hover {
@@ -304,7 +304,7 @@ a {
   transition: all 0.3s ease;
   cursor: pointer;
   right:0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .buttonMenu:hover {
@@ -810,30 +810,32 @@ button.submit-btn:hover {
 
 /* All Products and Product Pages CSS */
 .containerProduct {
-  width: 80%;
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .filter-container {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 .gable-filter-container {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 #product-filter {
   padding: 10px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
 }
 #gable-filter {
   padding: 10px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
 }
 
@@ -922,7 +924,7 @@ button.submit-btn:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 10;
 }
 
 .modal-content {
@@ -937,7 +939,7 @@ button.submit-btn:hover {
   justify-self: center;
   align-items: center;
   position: relative;
-  z-index: 100;
+  z-index: 10;
 }
 
 .modal-image {
@@ -945,7 +947,7 @@ button.submit-btn:hover {
   height: auto;
   max-width: 250px;
   margin-bottom: 10px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .close-button {
