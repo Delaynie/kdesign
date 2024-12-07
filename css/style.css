@@ -1206,9 +1206,9 @@ button.submit-btn:hover {
 }
 /* modal and product css */
 .modal-content {
-  top: 55px;
-  right: 5px;
-  max-width: 425px;
+  top: 65px;
+  right: 0;
+  width: auto;
   text-align: center;
   justify-self: center;
   align-items: center;
