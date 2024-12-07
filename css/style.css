@@ -1208,6 +1208,8 @@ button.submit-btn:hover {
 .modal-content {
   top: 65px;
   right: 0;
+  margin-right: 50%;
+  margin-left: 50%;
   width: 350px;
   text-align: center;
   justify-self: center;
