@@ -1206,7 +1206,8 @@ button.submit-btn:hover {
 }
 /* modal and product css */
 .modal {
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .modal-content {
