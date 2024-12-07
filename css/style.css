@@ -1209,6 +1209,10 @@ button.submit-btn:hover {
   top: 45px;
   right: 20px;
   max-width: 250px;
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* contact page mobile */
