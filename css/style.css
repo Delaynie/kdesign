@@ -1204,6 +1204,11 @@ button.submit-btn:hover {
 .cta-button, .cta-all-button {
   font-size: 14px;
 }
+/* modal and product css */
+.modal-content {
+  top: 35px;
+  max-width: 150px;
+}
 
 /* contact page mobile */
 
