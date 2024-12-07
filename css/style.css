@@ -900,7 +900,6 @@ button.submit-btn:hover {
   cursor: pointer;
   align-self: center;
   width: 120px;
-  padding: 6px;
   font-size: 14px;
   font-style: italic;
   text-decoration: none;
@@ -1208,6 +1207,7 @@ button.submit-btn:hover {
 /* modal and product css */
 .modal-content {
   top: 45px;
+  right: 20px;
   max-width: 250px;
 }
 
