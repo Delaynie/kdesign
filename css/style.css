@@ -1207,11 +1207,10 @@ button.submit-btn:hover {
 /* modal and product css */
 .modal-content {
   top: 45px;
-  right: 50%;
-  max-width: 250px;
+  left: 50%;
+  max-width: 450px;
   text-align: center;
   justify-self: center;
-  justify-content: center;
   align-items: center;
 }
 
