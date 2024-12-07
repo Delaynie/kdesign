@@ -24,7 +24,7 @@ const gableProducts = [
         id: 4,
         name: "Rectangle Gable Vent",
         category: "rectangleVent",
-        image: "/product_images/rectanglevent.jpg",
+        image: "/product_images/rectanglevents.jpg",
         description: "A traditional design that enhances the exterior of any home."
     }
 ];
@@ -39,39 +39,39 @@ function displayGableProducts(category) {
     
     const filteredGableProducts = category === 'all' 
         ? gableProducts 
-        : gableProducts.filter(gableProducts => gableProducts.category === category);
+        : gableProducts.filter(gableProduct => gableProduct.category === category);
     
-    filteredGableProducts.forEach(gableProducts => {
+    filteredGableProducts.forEach(gableProduct => {
         const gableProductElement = document.createElement('div');
-        gableProductElement.classList.add('gableProducts');
+        gableProductElement.classList.add('gableProduct');
         
         gableProductElement.innerHTML = `
-            <img src="${gableProducts.image}" alt="${gableProducts.name}" class="product-image">
-            <h4 class="product-name">${gableProducts.name}</h4>
-            <button class="more-info-btn" onclick="showProductInfo(${gableProducts.id})">More Info</button>
+            <img src="${gableProduct.image}" alt="${gableProduct.name}" class="product-image">
+            <h4 class="product-name">${gableProduct.name}</h4>
+            <button class="more-info-btn" onclick="showGableProductInfo(${gableProduct.id})">More Info</button>
         `;
         
-        gableProductList.appendChild(gableProductElement);
+        gableList.appendChild(gableProductElement);
     });
 }
 
 function filterGableProducts() {
-    const filterValue = document.getElementById('gable-filter').value;
-    displayProducts(filterValue);
+    const gableFilterValue = document.getElementById('gable-filter').value;
+    displayProducts(gableFilterValue);
 }
 
-function showProductInfo(productId) {
-    const gableProducts = gableProducts.find(p => p.id === productId);
+function showGableProductInfo(gableProductId) {
+    const gableProduct = gableProducts.find(p => p.id === gableProductId);
     
-    if (gableProducts) {
-        document.getElementById('gablemodal-product-image').src = gableProducts.image;
-        document.getElementById('gablemodal-product-name').innerText = gableProducts.name;
-        document.getElementById('gablemodal-product-description').innerText = gableProducts.description;
+    if (gableProduct) {
+        document.getElementById('gablemodal-product-image').src = gableProduct.image;
+        document.getElementById('gablemodal-product-name').innerText = gableProduct.name;
+        document.getElementById('gablemodal-product-description').innerText = gableProduct.description;
 
         document.getElementById('gableProductModal').style.display = 'block';
     }
 }
 
 function closeModal() {
-    document.getElementById('productModal').style.display = 'none';
+    document.getElementById('gableProductModal').style.display = 'none';
 }
