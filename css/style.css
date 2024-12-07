@@ -814,7 +814,8 @@ button.submit-btn:hover {
   text-align: center;
   margin: 0 auto;
   padding-top: 20px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .filter-container {
@@ -844,13 +845,13 @@ button.submit-btn:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
 }
 .gable-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .product {
@@ -898,7 +899,7 @@ button.submit-btn:hover {
   border-radius: 5px;
   cursor: pointer;
   align-self: center;
-  width: 80%;
+  width: 120px;
   padding: 6px;
   font-size: 14px;
   font-style: italic;
