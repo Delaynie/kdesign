@@ -813,9 +813,7 @@ button.submit-btn:hover {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .filter-container {
@@ -825,6 +823,14 @@ button.submit-btn:hover {
 .gable-filter-container {
   text-align: center;
   margin-bottom: 26px;
+}
+
+.filterArea {
+  color: white;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #product-filter {
