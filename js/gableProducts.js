@@ -2,84 +2,84 @@ const gableProducts = [
     {
         id: 1,
         name: "Round Gable Vent",
-        category: "roundVent",
+        category: "round",
         image: "/product_images/round cedar vents.jpg",
         description: "A classic design that ensures ventilation and aesthetic appeal for your home."
     },
     {
         id: 2,
         name: "Tombstone Gable Vent",
-        category: "tombstoneVent",
+        category: "tombstone",
         image: "/gallery_images/danmurphy2.jpg",
         description: "Custom shutters that add both charm and functionality to your windows."
     },
     {
         id: 3,
         name: "Octagon Gable Vent",
-        category: "octagonVent",
+        category: "octagon",
         image: "/product_images/octagon_group_thumb.gif",
         description: "Sleek and modern gable vent designed for better airflow and style."
     },
     {
         id: 4,
         name: "Rectangle Gable Vent",
-        category: "rectangleVent",
+        category: "rectangle",
         image: "/product_images/rectanglevents.jpg",
         description: "A traditional design that enhances the exterior of any home."
     },
     {
         id: 5,
         name: "Round Gable Vent",
-        category: "roundVent",
+        category: "round",
         image: "/product_images/round cedar vents.jpg",
         description: "A classic design that ensures ventilation and aesthetic appeal for your home."
     },
     {
         id: 6,
         name: "Tombstone Gable Vent",
-        category: "tombstoneVent",
+        category: "tombstone",
         image: "/gallery_images/danmurphy2.jpg",
         description: "Custom shutters that add both charm and functionality to your windows."
     },
     {
         id: 7,
         name: "Octagon Gable Vent",
-        category: "octagonVent",
+        category: "octagon",
         image: "/product_images/octagon_group_thumb.gif",
         description: "Sleek and modern gable vent designed for better airflow and style."
     },
     {
         id: 8,
         name: "Rectangle Gable Vent",
-        category: "rectangleVent",
+        category: "rectangle",
         image: "/product_images/rectanglevents.jpg",
         description: "A traditional design that enhances the exterior of any home."
     },
     {
         id: 9,
-        name: "Round Gable Vent",
-        category: "roundVent",
+        name: "Round Gable Vent", 
+        category: "round",
         image: "/product_images/round cedar vents.jpg",
         description: "A classic design that ensures ventilation and aesthetic appeal for your home."
     },
     {
         id: 10,
         name: "Tombstone Gable Vent",
-        category: "tombstoneVent",
+        category: "tombstone",
         image: "/gallery_images/danmurphy2.jpg",
         description: "Custom shutters that add both charm and functionality to your windows."
     },
     {
         id: 11,
         name: "Octagon Gable Vent",
-        category: "octagonVent",
+        category: "octagon",
         image: "/product_images/octagon_group_thumb.gif",
         description: "Sleek and modern gable vent designed for better airflow and style."
     },
     {
         id: 12,
         name: "Rectangle Gable Vent",
-        category: "rectangleVent",
+        category: "rectangle",
         image: "/product_images/rectanglevents.jpg",
         description: "A traditional design that enhances the exterior of any home."
     }
@@ -105,7 +105,7 @@ function displayGableProducts(category) {
             <img src="${gableProduct.image}" alt="${gableProduct.name}" class="product-image">
             <h4 class="product-name">${gableProduct.name}</h4>
             <button class="more-info-btn" onclick="showGableProductInfo(${gableProduct.id})">More Info</button>
-        `;
+        `; 
         
         gableList.appendChild(gableProductElement);
     });
@@ -113,7 +113,7 @@ function displayGableProducts(category) {
 
 function filterGableProducts() {
     const gableFilterValue = document.getElementById('gable-filter').value;
-    displayProducts(gableFilterValue);
+    displayGableProducts(gableFilterValue);
 }
 
 function showGableProductInfo(gableProductId) {

@@ -863,7 +863,7 @@ button.submit-btn:hover {
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
-.gableProducts {
+.gableProduct {
   width: 200px;
   text-align: center;
   background-color: white;
@@ -876,7 +876,7 @@ button.submit-btn:hover {
 .product:hover {
   transform: translateY(-5px);
 }
-.gableProducts:hover {
+.gableProduct:hover {
   transform: translateY(-5);
 }
 
