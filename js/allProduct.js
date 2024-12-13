@@ -26,6 +26,62 @@ const products = [
         category: "shutter",
         image: "/product_images/shutters.jpg",
         description: "A traditional design that enhances the exterior of any home."
+    },
+    {
+        id: 5,
+        name: "Round Gable Vent",
+        category: "vent",
+        image: "/product_images/round cedar vents.jpg",
+        description: "A classic design that ensures ventilation and aesthetic appeal for your home."
+    },
+    {
+        id: 6,
+        name: "Bahama Shutter",
+        category: "shutter",
+        image: "/product_images/bahamashutter.jpeg",
+        description: "Custom shutters that add both charm and functionality to your windows."
+    },
+    {
+        id: 7,
+        name: "Octagon Gable Vent",
+        category: "vent",
+        image: "/product_images/octagon_group_thumb.gif",
+        description: "Sleek and modern gable vent designed for better airflow and style."
+    },
+    {
+        id: 8,
+        name: "Traditional Shutter",
+        category: "shutter",
+        image: "/product_images/shutters.jpg",
+        description: "A traditional design that enhances the exterior of any home."
+    },
+    {
+        id: 9,
+        name: "Round Gable Vent",
+        category: "vent",
+        image: "/product_images/round cedar vents.jpg",
+        description: "A classic design that ensures ventilation and aesthetic appeal for your home."
+    },
+    {
+        id: 10,
+        name: "Bahama Shutter",
+        category: "shutter",
+        image: "/product_images/bahamashutter.jpeg",
+        description: "Custom shutters that add both charm and functionality to your windows."
+    },
+    {
+        id: 11,
+        name: "Octagon Gable Vent",
+        category: "vent",
+        image: "/product_images/octagon_group_thumb.gif",
+        description: "Sleek and modern gable vent designed for better airflow and style."
+    },
+    {
+        id: 12,
+        name: "Traditional Shutter",
+        category: "shutter",
+        image: "/product_images/shutters.jpg",
+        description: "A traditional design that enhances the exterior of any home."
     }
 ];
 

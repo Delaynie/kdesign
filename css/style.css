@@ -542,6 +542,71 @@ a {
   text-align: center;
 }
 
+/* CSS Styling for the Shipping Info section */
+.shipping-info {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 3px solid #4CAF50;
+}
+
+.shipping-info .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.shipping-info h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-description {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.shipping-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.shipping-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.shipping-item:hover {
+  transform: translateY(-5px);
+}
+
+.shipping-item i {
+  font-size: 2.5em;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.shipping-item h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.shipping-item p {
+  font-size: 1em;
+  color: #555;
+}
+
 
 /* --------------------- Alternating Section CSS ------------- */
 
