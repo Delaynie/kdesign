@@ -227,7 +227,8 @@ a {
   text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.1), /* Light shadow */
         12px 12px 20px rgba(0, 0, 0, 0.774); /* Deeper shadow */
-}
+  text-shadow: 10px 10px 16px rgba(0, 0, 0, 0.79);
+      }
 
 
 /* to the top button styling */
