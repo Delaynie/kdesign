@@ -1303,6 +1303,11 @@ textarea {
   margin-left: 0;
 }
 
+.shipping-info {
+  width: 99vw;
+  overflow-x: hidden;
+}
+
 footer h6 {
   text-align: left;
   margin-left: 5%;
