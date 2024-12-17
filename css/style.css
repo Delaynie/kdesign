@@ -577,7 +577,6 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  gap: 20px;
 }
 
 .shipping-item {
@@ -1331,6 +1330,7 @@ textarea {
   justify-self: center;
   align-self: center;
   width: 260px;
+  padding-bottom: 20px;
 }
 
 footer h6 {
