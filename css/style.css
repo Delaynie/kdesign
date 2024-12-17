@@ -1248,6 +1248,7 @@ button.submit-btn:hover {
 .hero h1 {
   font-size: 44px;
   margin-bottom: 15px;
+  align-self: center;
 }
 
 .big-title {
@@ -1264,6 +1265,7 @@ button.submit-btn:hover {
 .hero h2 {
   font-size: 26px;
   margin-bottom: 20px;
+  align-self: center;
 }
 
 .little-title {
