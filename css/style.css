@@ -554,8 +554,8 @@ a {
 
 .shipping-info .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+  margin: 0;
+  padding: 0 75px;
 }
 
 .shipping-info h2 {
@@ -575,7 +575,7 @@ a {
 .shipping-details {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
 }
 
