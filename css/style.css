@@ -1245,11 +1245,12 @@ button.submit-btn:hover {
   height: 90vh;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 44px;
   margin-bottom: 15px;
   align-self: center;
 }
+
 
 .big-title {
   padding-top: 60px;
@@ -1262,7 +1263,7 @@ button.submit-btn:hover {
   align-self: center;
 }
 
-.hero h2 {
+.hero-content h2 {
   font-size: 26px;
   margin-bottom: 20px;
   align-self: center;
@@ -1336,7 +1337,7 @@ textarea {
 .shipping-item {
   justify-self: center;
   align-self: center;
-  width: 300px;
+  width: 275px;
 }
 
 footer h6 {
