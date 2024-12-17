@@ -596,7 +596,7 @@ a {
 
 .shipping-item i {
   font-size: 2.5em;
-  color: #4CAF50;
+  color: #0176f2; /*#4CAF50 - green #0056b3 - blue*/
   margin-bottom: 15px;
 }
 
