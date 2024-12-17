@@ -1335,6 +1335,7 @@ textarea {
 }
 .shipping-item {
   justify-self: center;
+  align-self: center;
   width: 300px;
 }
 
