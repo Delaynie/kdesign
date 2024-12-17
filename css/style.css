@@ -1245,6 +1245,8 @@ button.submit-btn:hover {
   font-size: 44px;
   margin-bottom: 15px;
   align-self: center;
+  justify-self: center;
+  align-items: center;
 }
 
 
@@ -1317,13 +1319,8 @@ textarea {
   margin-left: 0;
 }
 
-.shipping-info {
-  margin: auto;
-}
-
 .info-description {
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 80%;
 }
 
 .shipping-details {
@@ -1333,7 +1330,7 @@ textarea {
 .shipping-item {
   justify-self: center;
   align-self: center;
-  width: 250px;
+  width: 260px;
 }
 
 footer h6 {
