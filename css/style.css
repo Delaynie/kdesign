@@ -95,9 +95,6 @@ footer h6{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.213);
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
 }
 
 .home-hero-content {
@@ -200,6 +197,7 @@ a {
       10px 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   z-index:2;
+  justify-self: center;
 }
 
 .scrolled {
@@ -216,6 +214,7 @@ a {
   width: 60%;
   font-style: italic;
   color: #fff;
+  justify-self: center;
   margin-bottom: 20px;
   padding-bottom: 10px;
   z-index: 2;
@@ -1236,8 +1235,6 @@ button.submit-btn:hover {
 .hero {
   height: 90vh;
   background-color: rgba(0, 0, 0, 0.28);
-  justify-content: center;
-  align-items: center;
 }
 .hero-background {
   background-position: 80%;
@@ -1269,13 +1266,13 @@ button.submit-btn:hover {
 .hero a {
   font-size: 16px;
   margin-bottom: 30px;
-  align-self: center;
+  /* justify-self: center */
 }
 .hero-content {
-  justify-content: center;
+  /*justify-content: center;
   justify-items: center;
   align-items: center;
-  align-content: center;
+  align-content: center;*/
 }
 
 .cta-button, .cta-all-button {
@@ -1333,7 +1330,7 @@ textarea {
   justify-content: center;
 }
 .shipping-item {
-  align-self: center;
+  justify-self: center;
 }
 
 footer h6 {
