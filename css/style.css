@@ -544,18 +544,17 @@ a {
 
 /* CSS Styling for the Shipping Info section */
 .shipping-info {
-  background-color: #daf5db;
   background-color: rgb(251, 149, 15);
   padding: 30px 0;
   text-align: center;
+  width: 100vw;
   border-top: 3px solid orange;
   border-bottom: 3px solid orange;
 }
 
 .shipping-info .container {
-  max-width: 1200px;
   margin: 0;
-  padding: 0 75px;
+  padding: 0;
 }
 
 .shipping-info h2 {
@@ -570,13 +569,15 @@ a {
   color: #777;
   color: white;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .shipping-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  align-self: center;
+  gap: 10px;
 }
 
 .shipping-item {
