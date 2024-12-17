@@ -94,12 +94,20 @@ footer h6{
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.213);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 
 .home-hero-content {
   z-index: 2;
   text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.704);
   width: 75vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 
 .hero a {
@@ -181,7 +189,6 @@ a {
   font-weight: 600;
   padding-top: 100px;
   padding-bottom: 10px;
-  justify-self: center;
   width: 60%;
   color: #fff;
   letter-spacing: 1px;
@@ -207,7 +214,6 @@ a {
 .little-title {
   font-size: 36px;
   width: 60%;
-  justify-self: center;
   font-style: italic;
   color: #fff;
   margin-bottom: 20px;
@@ -1239,7 +1245,7 @@ button.submit-btn:hover {
 }
 
 .home-hero-background {
-  background-position: 80%;
+  background-position: center;
   height: 90vh;
 }
 
@@ -1267,7 +1273,9 @@ button.submit-btn:hover {
 }
 .hero-content {
   justify-content: center;
+  justify-items: center;
   align-items: center;
+  align-content: center;
 }
 
 .cta-button, .cta-all-button {
@@ -1314,13 +1322,18 @@ textarea {
 .shipping-info {
   width: 100vw;
   margin: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 .info-description {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.shipping-details {
+  justify-content: center;
+}
+.shipping-item {
+  align-self: center;
 }
 
 footer h6 {
