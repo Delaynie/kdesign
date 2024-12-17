@@ -578,7 +578,7 @@ a {
 
 .shipping-details {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   align-content: center;
   gap: 20px;
@@ -1329,10 +1329,11 @@ textarea {
 
 .shipping-details {
   justify-content: center;
+  flex-direction: column;
 }
 .shipping-item {
   justify-self: center;
-  width: 350px;
+  width: 300px;
 }
 
 footer h6 {
