@@ -580,9 +580,9 @@ a {
 .shipping-details {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-self: center;
-  gap: 10px;
+  justify-content: space-around;
+  align-content: center;
+  gap: 20px;
 }
 
 .shipping-item {
@@ -1253,9 +1253,13 @@ button.submit-btn:hover {
 
 .big-title {
   padding-top: 60px;
+  justify-self: center;
+  align-self: center;
 }
 .bigish-title {
   padding-top: 40px;
+  justify-self: center;
+  align-self: center;
 }
 
 .hero h2 {
@@ -1263,16 +1267,15 @@ button.submit-btn:hover {
   margin-bottom: 20px;
 }
 
+.little-title {
+  justify-self: center;
+  align-self: center;
+}
+
 .hero a {
   font-size: 16px;
   margin-bottom: 30px;
   /* justify-self: center */
-}
-.hero-content {
-  /*justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;*/
 }
 
 .cta-button, .cta-all-button {
