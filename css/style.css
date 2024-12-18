@@ -1285,6 +1285,7 @@ button.submit-btn:hover {
 .little-title {
   justify-self: center;
   align-self: center;
+  width: 100%;
 }
 
 .hero a {
@@ -1335,7 +1336,8 @@ textarea {
 }
 
 .info-description {
-  width: 80%;
+  width: 100%;
+  padding: 12px;
 }
 
 .shipping-details {
