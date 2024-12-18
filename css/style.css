@@ -91,7 +91,7 @@ footer h6{
 .hero-content {
   z-index: 2; /* Ensure content stays on top of the background */
   text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text for readability */
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.213);
   justify-content: center;
@@ -215,7 +215,7 @@ a {
   justify-self: center;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  z-index: 2;
+  z-index: 1;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
   -webkit-text-stroke: .4px #333;
 }
@@ -567,6 +567,7 @@ a {
   text-align: center;
   border-top: 3px solid orange;
   border-bottom: 3px solid orange;
+  margin: auto;
 }
 
 .shipping-info h2 {
