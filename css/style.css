@@ -1050,7 +1050,7 @@ button.submit-btn:hover {
   z-index: 1;
 }
 .bg-linear {
-  background-image: linear-gradient(to left, rgb(240,240,240), rgb(240,239,238), rgb(214, 214, 213));
+  background-image: linear-gradient(to left, white, rgba(234, 234, 234, 0.542));
 }
 
 .bg-orange {
@@ -1259,21 +1259,23 @@ button.submit-btn:hover {
   justify-self: center;
   align-items: center;
 }
-.home-hero-content {
-  font-size: 44px;
+.home-hero-content h2 {
+  font-size: 36px;
   margin-bottom: 15px;
-
+  width: 100%;
 }
 
 .big-title {
   padding-top: 60px;
   justify-self: center;
   align-self: center;
+  width: 100%
 }
 .bigish-title {
   padding-top: 40px;
   justify-self: center;
   align-self: center;
+  width: 100%;
 }
 
 .hero-content h2 {
