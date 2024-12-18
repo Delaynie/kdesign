@@ -1227,10 +1227,10 @@ button.submit-btn:hover {
 
 .hero {
   height: 90vh;
-  background-color: rgba(0, 0, 0, 0.28);
+  /*background-color: rgba(0, 0, 0, 0.28);*/
 }
 .hero-background {
-  background-position: 80%;
+  /*background-position: 80%;*/
   height: 90vh;
 }
 
@@ -1246,7 +1246,11 @@ button.submit-btn:hover {
   justify-self: center;
   align-items: center;
 }
-
+.home-hero-content {
+  font-size: 44px;
+  margin-bottom: 15px;
+  
+}
 
 .big-title {
   padding-top: 60px;
