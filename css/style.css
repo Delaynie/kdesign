@@ -681,6 +681,34 @@ a {
   color: #555;
 }
 
+/* ABOUT SECTION */
+.about-info {
+  background-color: rgb(251, 149, 15);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-top: 3px solid orange;
+  border-bottom: 3px solid orange;
+  margin: auto;
+}
+
+.about-info h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #333;
+  color: white;
+}
+
+.about-info p {
+  font-size: 18px;
+  padding: 32px;
+  text-align: left;
+  color: #777;
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
 
 /* --------------------- Alternating Section CSS ------------- */
 
@@ -1415,6 +1443,16 @@ textarea {
   margin: auto;
   justify-content: center;
   align-content: center;
+}
+
+.about-info {
+  margin:auto;
+  justify-content: center;
+  align-content: center;
+}
+.about-info p {
+  justify-content: center;
+  flex-direction: column;
 }
 
 footer h6 {
