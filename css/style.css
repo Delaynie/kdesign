@@ -426,6 +426,7 @@ a {
 
 
   /* Gallery Section */
+
 .gallery {
   padding: 2rem 1rem;
   max-width: 1200px;
@@ -447,14 +448,25 @@ a {
   background-color: #fff;
 }
 
-.gallery-item img {
+.gallery-item .gallery-image {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
 }
+.gallery-item .gallery-image-mirror {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.gallery-item:hover .gallery-image-mirror {
+  transform: scaleX(-1) scale(1.05);
+}
 
-.gallery-item:hover img {
+.gallery-item:hover .gallery-image {
   transform: scale(1.05);
 }
 
