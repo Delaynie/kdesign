@@ -684,11 +684,13 @@ a {
 /* ABOUT SECTION */
 .about-info {
   background-color: rgb(251, 149, 15);
+  
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  /*
   border-top: 3px solid orange;
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid orange;*/
   margin: auto;
 }
 
@@ -699,7 +701,7 @@ a {
   color: white;
 }
 
-.about-info p {
+.about-info p, .about-info a{
   font-size: 18px;
   padding: 32px;
   text-align: left;
@@ -707,6 +709,13 @@ a {
   color: white;
   margin-bottom: 20px;
   padding-bottom: 20px;
+}
+.about-info a {
+  padding: 6px 32px;
+  border-radius: 8px;
+  background-color: rgb(50,50,50);
+  color: white;
+  box-shadow: 4px 4px 8px rgb(40,40,40);
 }
 
 
@@ -1455,6 +1464,7 @@ textarea {
   justify-content: center;
   flex-direction: column;
 }
+
 
 footer h6 {
   text-align: left;
