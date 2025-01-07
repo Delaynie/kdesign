@@ -717,6 +717,10 @@ a {
   color: white;
   box-shadow: 4px 4px 8px rgb(40,40,40);
 }
+.about-info a:hover {
+  background-color: rgb(40,40,40);
+  box-shadow: 5px 5px 10px rgb(40,40,40);
+}
 
 
 /* --------------------- Alternating Section CSS ------------- */
