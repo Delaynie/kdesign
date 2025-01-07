@@ -104,7 +104,7 @@ function displayProducts(category) {
         productElement.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <h4 class="product-name">${product.name}</h4>
-            <button class="more-info-btn" onclick="showProductInfo(${product.id})">More Info</button>
+            <button class="more-info-btn" onclick="showProductInfo(${product.id})">Info</button>
         `;
         
         productList.appendChild(productElement);
