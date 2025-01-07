@@ -1401,7 +1401,7 @@ button.submit-btn:hover {
 .little-title {
   justify-self: center;
   align-self: center;
-  width: 90%;
+  width: 100%;
 }
 
 .hero a {
@@ -1504,6 +1504,7 @@ footer h6 {
 
 .gallery-container {
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  margin: auto;
 }
 }
 
