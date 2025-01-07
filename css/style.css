@@ -5,6 +5,13 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+.padding-top {
+  padding-top: 30px;
+}
+.padding-bottom {
+  padding-bottom: 30px;
+}
+
 footer {
   display: flex;
   justify-items: center;
@@ -152,6 +159,9 @@ footer h6{
   .navButton:hover {
     transform: perspective(500px) scale(1.3);
     color: white;
+  }
+  .navh6 {
+    padding-top: 16px;
   }
 
   .w3-container {
