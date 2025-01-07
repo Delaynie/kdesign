@@ -1349,6 +1349,7 @@ button.submit-btn:hover {
 
 .hero {
   height: 90vh;
+  text-shadow: none;
   /*background-color: rgba(0, 0, 0, 0.28);*/
 }
 .hero-background {
@@ -1362,29 +1363,33 @@ button.submit-btn:hover {
 }
 
 .hero-content h1 {
-  font-size: 44px;
+  font-size: 40px;
   margin-bottom: 15px;
   align-self: center;
   justify-self: center;
   align-items: center;
+  text-shadow: none;
 }
 .home-hero-content h2 {
   font-size: 36px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 90%;
+  text-shadow: none;
 }
 
 .big-title {
   padding-top: 60px;
   justify-self: center;
   align-self: center;
-  width: 100%
+  width: 100%;
+  text-shadow:none; 
 }
 .bigish-title {
   padding-top: 40px;
   justify-self: center;
   align-self: center;
   width: 100%;
+  text-shadow: none;
 }
 
 .hero-content h2 {
@@ -1396,7 +1401,7 @@ button.submit-btn:hover {
 .little-title {
   justify-self: center;
   align-self: center;
-  width: 100%;
+  width: 90%;
 }
 
 .hero a {
@@ -1498,15 +1503,15 @@ footer h6 {
 
 
 .gallery-container {
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 }
 }
 
 @media screen and (max-width: 480px) {
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .gallery-description p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 }
