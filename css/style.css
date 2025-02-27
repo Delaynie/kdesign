@@ -88,7 +88,7 @@ footer h6{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/gallery_images/kdesignhousetwo.JPEG'); /* Same image for background */
+  background-image: url('/gallery_images/kdesignhouse.jpg'); /* Same image for background */
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -117,7 +117,7 @@ footer h6{
   font-size: 16px;
   margin-bottom: 30px;
 }
-
+/*
 .cta-button {
   padding: 10px 20px;
   background-color: rgb(240, 145, 44);
@@ -132,7 +132,7 @@ footer h6{
   background-color: rgb(223, 127, 25);
   transform: perspective(500) scale(1.1);
 }
-
+*/
   /* -------- Nav Styling ---------- */
   .hoverX:hover {
     transform: perspective(500px) scale(1.3);
@@ -323,6 +323,57 @@ a {
 .buttonMenu:hover {
   transform: perspective(500px) rotateX(0deg) scale(1.08);
 }
+
+/* CTA BUTTON IDEAS */
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+/* Deep Navy with Gold Text */
+.cta-navy {
+  background-color: #002147;
+  color: #C9A227;
+  border-color: #C9A227;
+}
+.cta-navy:hover {
+  background-color: #003366;
+  color: #FFD700;
+}
+
+/* Gold with Black Text */
+.cta-gold {
+  background-color: #C9A227;
+  color: #000000;
+}
+.cta-gold:hover {
+  background-color: #B08C1E;
+}
+
+/* Black with Gold Text */
+.cta-black {
+  background-color: #000000;
+  color: #C9A227;
+  border-color: #C9A227;
+}
+.cta-black:hover {
+  background-color: #333333;
+}
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
 
 /* Font Weights and Styles */
   
@@ -694,6 +745,8 @@ a {
 /* ABOUT SECTION */
 .about-info {
   background-color: rgb(251, 149, 15);
+  background-color: rgb(255, 215, 5);
+  background-color: rgb(54, 54, 54);
   
   padding-top: 20px;
   padding-bottom: 20px;
@@ -707,16 +760,17 @@ a {
 .about-info h2 {
   font-size: 2.2em;
   margin-bottom: 10px;
-  color: #333;
-  color: white;
+  color: rgb(28, 28, 28);
+  color: rgb(251, 149, 15);
+  color: rgb(116, 116, 58);
+  color: rgb(197, 159, 45);
 }
 
 .about-info p, .about-info a{
   font-size: 18px;
   padding: 32px;
   text-align: left;
-  color: #777;
-  color: white;
+  color: rgb(220,220,220);
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -724,7 +778,7 @@ a {
   padding: 6px 32px;
   border-radius: 8px;
   background-color: rgb(50,50,50);
-  color: white;
+  color: rgb(220,220,220);
   box-shadow: 4px 4px 8px rgb(40,40,40);
 }
 .about-info a:hover {
@@ -899,6 +953,7 @@ a {
 
 .contact-item a {
     color: #4CAF50;
+    color: #1F4D3A;
     text-decoration: none;
 }
 
@@ -967,6 +1022,7 @@ textarea {
 
 button.submit-btn {
     background-color: #4CAF50;
+    background-color: #2E6A50;
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -981,7 +1037,7 @@ button.submit-btn {
 }
 
 button.submit-btn:hover {
-    background-color: #45a049;
+    background-color: #387f60;
 }
 
 /* All Products and Product Pages CSS */
@@ -1183,6 +1239,7 @@ button.submit-btn:hover {
   width: 2px;
   height: 100%;
   background-color: orange;
+  background-color: rgb(197, 159, 45);
   z-index: -1;
   animation: fadeLines 7s infinite linear;
 }
@@ -1191,6 +1248,7 @@ button.submit-btn:hover {
 .with-lines .line.line1 {
   left: 10px;
   background-color: rgb(199, 197, 197);
+  background-color: rgb(192, 192, 192);
 }
 
 
@@ -1205,6 +1263,7 @@ button.submit-btn:hover {
 .with-lines .line.line4 {
   left: 40px;
   background-color: rgb(199,197,197);
+  background-color: rgb(192, 192, 192);
 }
 
 .with-lines .line.line5 {
@@ -1212,6 +1271,7 @@ button.submit-btn:hover {
 }
 .with-lines .line.line6 {
   background-color: rgb(199,197,197);
+  background-color: rgb(192, 192, 192);
   right: 10px;
 }
 .with-lines .line.line7 {
@@ -1222,7 +1282,7 @@ button.submit-btn:hover {
 }
 .with-lines .line.line9 {
   right: 40px;
-  background-color: rgb(199,197,197);
+  background-color: rgb(192,192,192);
 }
 .with-lines .line.line10 {
   right: 50px;
