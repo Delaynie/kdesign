@@ -24,6 +24,7 @@ footer {
   line-height: 1;
   z-index: 1;
 }
+
 footer h6{
   font-size:14px;
 }
@@ -61,7 +62,7 @@ footer h6{
 }
 
 /* hero header */
-.hero {
+.hero-old {
   position: relative;
   height: 100vh; /* Full viewport height */
   display: flex; 
@@ -113,7 +114,7 @@ footer h6{
 
 }
 
-.hero a {
+.hero-old a {
   font-size: 16px;
   margin-bottom: 30px;
 }
@@ -141,6 +142,7 @@ footer h6{
   .nav-grad {
     background-image: linear-gradient(to top, black, rgb(60,60,60));
     color: white;
+    border-left: 1px solid rgb(197, 159, 45);
   }
 
   .navItems {
@@ -249,11 +251,12 @@ a {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  padding: 10px 18px 10px 18px; /* Some padding */
-  border-radius: 60px 25px 60px 25px; /* Rounded corners */
+  padding: 10px 20px 10px 20px; /* Some padding */
+  border-radius: 60px 25px 60px 25px;
+  border-radius: 30px;
   font-size: 24px; /* Increase font size */
-  background-color: orange;
-  color: white;
+  background-color: rgb(197,159,45);
+  color: #1a1a1a;
   border: none;
   outline: none;
   cursor: pointer;
@@ -264,7 +267,7 @@ a {
 
 /* Hover effect for normal screens */
 .scroll-to-top:hover {
-  background-color: rgb(240, 145, 44); /* Add a dark-grey background on hover */
+  background-color: rgb(211, 171, 48); /* Add a dark-grey background on hover */
   transform: perspective(500px) rotateX(0deg) scale(1.08); /* Slight scaling for effect */
     text-shadow: 
         2px 2px 5px rgba(0, 0, 0, 0.2), 
@@ -273,7 +276,7 @@ a {
 }
 /* If the button is clicked on mobile, disable the hover effect */
 .scroll-to-top.clicked:hover {
-  background-color: orange; /* Reset the background color */
+  background-color: rgb(197,159,45); /* Reset the background color */
   transform: none; /* Remove the scaling effect */
   transition: 0.3s ease;
 }
@@ -288,9 +291,9 @@ a {
   margin-top: 6px;
   margin-left: 6px;
   border-radius: 44px 16px;
-  color: white;
-  background-color: rgb(240, 145, 44);
-  box-shadow: 1px 1px 1px 1.5px rgb(82, 81, 81);
+  color: #C9A227;
+  background-color: #1a1a1a;
+  box-shadow: 4px 2px 6px 1px rgba(82, 81, 81, 0.508);
   transition: all 0.3s ease;
   cursor: pointer;
   left:0;
@@ -310,10 +313,10 @@ a {
   padding-bottom: 5px;
   margin-top: 6px;
   margin-right: 6px;
-  border-radius: 44px 16px;
-  color: white;
-  background-color: rgb(240, 145, 44);
-  box-shadow: 1px 1px 1px 1.5px rgb(82, 81, 81);
+  border-radius: 14px;
+  color: #C9A227;
+  background-color: #1a1a1a;
+  box-shadow: 4px 2px 6px 1px rgba(82, 81, 81, 0.508);
   transition: all 0.3s ease;
   cursor: pointer;
   right:0;
@@ -746,7 +749,7 @@ a {
 .about-info {
   background-color: rgb(251, 149, 15);
   background-color: rgb(255, 215, 5);
-  background-color: rgb(54, 54, 54);
+  background-color: #1a1a1a;
   
   padding-top: 20px;
   padding-bottom: 20px;
@@ -776,14 +779,14 @@ a {
 }
 .about-info a {
   padding: 6px 32px;
-  border-radius: 8px;
-  background-color: rgb(50,50,50);
-  color: rgb(220,220,220);
-  box-shadow: 4px 4px 8px rgb(40,40,40);
+  border-radius: 12px;
+  background-color: rgb(71, 71, 71);
+  color: #f8f8f8;
+  box-shadow: 4px 2px 6px 1px rgba(82, 81, 81, 0.508);
 }
 .about-info a:hover {
   background-color: rgb(40,40,40);
-  box-shadow: 5px 5px 10px rgb(40,40,40);
+  box-shadow: 4px 2px 6px 1px rgba(82, 81, 81, 0.508);
 }
 
 
@@ -1209,9 +1212,9 @@ button.submit-btn:hover {
 
 .bg-color {
  /* background-image: linear-gradient(to left, black, rgb(225, 225, 225), rgb(247, 245, 245)); /* rgb(245,153,6), rgb(5, 30, 99), */
-  background-color:black;
+  background-color:#1a1a1a;
   color: rgb(200,200,200);
-  border-top: 2px solid orange;
+  border-top: 2px solid rgb(197,159,45);
   z-index: 1;
 }
 .bg-linear {
