@@ -142,7 +142,7 @@ footer h6{
   .nav-grad {
     background-image: linear-gradient(to top, black, rgb(60,60,60));
     color: white;
-    border-left: 1px solid rgb(197, 159, 45);
+    border-left: 1px solid #C9A227;
   }
 
   .navItems {
@@ -1248,7 +1248,7 @@ button.submit-btn:hover {
   width: 2px;
   height: 100%;
   background-color: orange;
-  background-color: rgb(197, 159, 45);
+  background-color: #C9A227;
   z-index: -1;
   animation: fadeLines 7s infinite linear;
 }
