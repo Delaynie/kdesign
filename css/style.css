@@ -683,11 +683,18 @@ a {
 /* CSS Styling for the Shipping Info section */
 .shipping-info {
   background-color: rgb(251, 149, 15);
+  background-color: #B8A899;
+  background-color: #E3E3E3;
+  background-color: #CACACA;  
+  background-color: #FAFAFA;
+  background-color: #0C1B2C;
+  background-color: #1a1a1a;
+
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  border-top: 3px solid orange;
-  border-bottom: 3px solid orange;
+  border-top: 3px solid #C9A227;
+  border-bottom: 3px solid #C9A227;
   margin: auto;
 }
 
@@ -696,12 +703,13 @@ a {
   margin-bottom: 10px;
   color: #333;
   color: white;
+  color: #B08C1E;
 }
 
 .info-description {
   font-size: 1.1em;
   color: #777;
-  color: white;
+  color: #CACACA;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -731,6 +739,7 @@ a {
 .shipping-item i {
   font-size: 2.5em;
   color: rgb(60,60,60); /*#4CAF50 - green #0176f2 & #0056b3 - blue*/
+  color: #B08C1E;
   margin-bottom: 15px;
 }
 
@@ -763,9 +772,6 @@ a {
 .about-info h2 {
   font-size: 2.2em;
   margin-bottom: 10px;
-  color: rgb(28, 28, 28);
-  color: rgb(251, 149, 15);
-  color: rgb(116, 116, 58);
   color: rgb(197, 159, 45);
 }
 
