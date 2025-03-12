@@ -47,6 +47,18 @@
     </div>
   </nav>
   
+
+  <!-- UPDATED HERO SECTION -->
+ <section class="flex-hero-small">
+  <div class="hero">
+      <div class="hero-line"></div>
+      <h1 class="hero-text">Kimball Designs</h1>
+      <p class="hero-text">Trusted quality, custom options.</p>
+    <div class="margin-top hero-line"></div>  
+  </div>
+</section>
+
+<!-- Old Hero Section --
   <section class="hero">
     <div class="home-hero-background"></div>
     <div class="hero-content">
@@ -55,7 +67,7 @@
         <a href="/product_pages/all_products.html" class="cta-all-button">Explore All Products</a>
     </div>
    
-</section>
+</section> -->
 
   <!-- Page Content -->
   
@@ -90,6 +102,11 @@
 
       <!----------Javascript and JS Links -------------->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.querySelector(".hero").classList.add("visible");
+      });
+  </script>
     <script>
         // Open and close sidebar
         function openNav() {

@@ -45,7 +45,17 @@
 
     <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
     
-  <!-- Hero Section -->
+    <!-- UPDATED HERO SECTION -->
+    <section class="flex-hero-small">
+      <div class="hero">
+          <div class="hero-line"></div>
+          <h1 class="hero-text">Kimball Designs</h1>
+          <p class="hero-text">Trusted quality, custom options.</p>
+        <div class="margin-top hero-line"></div>  
+      </div>
+    </section>
+
+  <!-- Old Hero Section --
    <section class="hero">
     <div class="hero-background" style="background-image: url('/gallery_images/Russell\ Pape.jpg'); background-position:center;"></div>
     <div class="hero-content">
@@ -54,7 +64,7 @@
         <a href="#products" class="cta-button">Request a Quote</a>
     </div>
    
-</section>
+</section> -->
 
 <!-- Gable Products Page -->
 <section class="sectionLines with-lines">
@@ -124,6 +134,11 @@
 <!----------Javascript and JS Links -------------->
     <script src="/js/main.js"></script>
     <script src="/js/gableProducts.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.querySelector(".hero").classList.add("visible");
+      });
+  </script>
     <script>
         // Open and close sidebar
         function openNav() {
