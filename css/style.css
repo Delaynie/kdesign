@@ -1420,13 +1420,15 @@ footer h6{
 
 .flex-hero-small {
   height: 90vh;
+  font-size: 45px;
 }
 
 .hero-h1-small {
   font-size: 45px;
 }
 .hero p {
-  font-size: 12;
+  max-width: 85vw;
+  font-size: 10;
 }
 
 .big-title {
