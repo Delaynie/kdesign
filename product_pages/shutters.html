@@ -139,14 +139,17 @@
         });
     </script>
     <script>
-        // Open and close sidebar
         function openNav() {
-          document.getElementById("mySidebar").style.width = "60%";
-          document.getElementById("mySidebar").style.display = "block";
+            if (window.innerWidth <= 768) { // Mobile screens (adjust breakpoint as needed)
+                document.getElementById("mySidebar").style.width = "100%";
+            } else {
+                document.getElementById("mySidebar").style.width = "60%";
+            }
+            document.getElementById("mySidebar").style.display = "block";
         }
         
         function closeNav() {
-          document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
     
