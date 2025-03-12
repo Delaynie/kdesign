@@ -76,6 +76,27 @@
     <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;" onclick="openNav()">Menu <i class="fa fa-bars"></i></span>
 </div>
 
+<!-- SIMPLE AND CONVERTING ABOUT SECTION -->
+<section class="about-info">
+    <div class="container">
+    <!--<h2>Your Trusted Partner for Custom Vents & Shutters</h2>-->
+    <h2>Reliability, Customization, and Partnership—All in One</h2>
+    <!--<h2>Crafting Custom Solutions with Trusted Reliability</h2>-->
+    <!--<h2>Your Trusted Partner for Custom Products</h2>-->
+    <p> &ThickSpace; Founded in the Ouachita in 1998 and now based in Northwest Arkansas, 
+        we specialize in providing high-quality custom gable vents, shutters, 
+        and more for large-scale residential and 
+        commercial projects. With our extensive experience, we are equipped 
+        to efficiently manage bulk orders and ensure timely delivery, no matter 
+        the size of your project. Our wide range of durable, custom solutions is 
+        designed to enhance both the aesthetic appeal and functionality of new 
+        constructions, renovations, and developments. <br><br>
+        &ThickSpace; Whether you’re building a 
+        major residential community or a commercial property, our team is committed 
+        to delivering exceptional products tailored to your specific needs, ensuring 
+        a seamless experience from start to finish.</p>
+    </div>
+    </section>
 
 <!------------ Featured Products Section ------------------>
 <section class="mobile-hide">
@@ -136,27 +157,7 @@
 </section>
 </section>
 
-<!-- SIMPLE AND CONVERTING ABOUT SECTION -->
-<section class="about-info">
-    <div class="container">
-    <!--<h2>Your Trusted Partner for Custom Vents & Shutters</h2>-->
-    <h2>Reliability, Customization, and Partnership—All in One</h2>
-    <!--<h2>Crafting Custom Solutions with Trusted Reliability</h2>-->
-    <!--<h2>Your Trusted Partner for Custom Products</h2>-->
-    <p> &ThickSpace; Founded in the Ouachita in 1998 and now based in Northwest Arkansas, 
-        we specialize in providing high-quality custom gable vents, shutters, 
-        and more for large-scale residential and 
-        commercial projects. With our extensive experience, we are equipped 
-        to efficiently manage bulk orders and ensure timely delivery, no matter 
-        the size of your project. Our wide range of durable, custom solutions is 
-        designed to enhance both the aesthetic appeal and functionality of new 
-        constructions, renovations, and developments. <br><br>
-        &ThickSpace; Whether you’re building a 
-        major residential community or a commercial property, our team is committed 
-        to delivering exceptional products tailored to your specific needs, ensuring 
-        a seamless experience from start to finish.</p>
-    </div>
-    </section>
+<!-- GALLERY OF FEATURED PROJECTS -->
 
 <section class="gallery">
     <h2 class="section-title" style="justify-self: center;">Featured Projects</h2>
@@ -387,7 +388,7 @@
             document.querySelector(".hero").classList.add("visible");
         });
     </script>
-    <script>
+    <!--<script>
         // Open and close sidebar
         function openNav() {
           document.getElementById("mySidebar").style.width = "75%";
@@ -397,7 +398,21 @@
         function closeNav() {
           document.getElementById("mySidebar").style.display = "none";
         }
-    </script>
+    </script> -->
+    <script>
+    function openNav() {
+        if (window.innerWidth <= 768) { // Mobile screens (adjust breakpoint as needed)
+            document.getElementById("mySidebar").style.width = "100%";
+        } else {
+            document.getElementById("mySidebar").style.width = "75%";
+        }
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
     
 </body>
 </html>

@@ -1314,11 +1314,6 @@ footer h6{
     margin-bottom: 40px;
   }
 
-  .big-title {
-    padding-top: 40px;
-    font-size: 36px;
-  }
-
   .buttonMenu {
     margin-top: 12px;
     z-index:100;
@@ -1412,11 +1407,14 @@ footer h6{
   padding-left: 0;
 }
 
+/*
 .hero {
   height: 90vh;
   text-shadow: none;
-  /*background-color: rgba(0, 0, 0, 0.28);*/
-}
+  /*background-color: rgba(0, 0, 0, 0.28);*
+}*/
+
+
 .hero-background {
   /*background-position: 80%;*/
   height: 90vh;
@@ -1425,21 +1423,6 @@ footer h6{
 .home-hero-background {
   background-position: center;
   height: 90vh;
-}
-
-.hero-content h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  align-self: center;
-  justify-self: center;
-  align-items: center;
-  text-shadow: none;
-}
-.home-hero-content h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
-  width: 90%;
-  text-shadow: none;
 }
 
 .big-title {
@@ -1457,23 +1440,12 @@ footer h6{
   text-shadow: none;
 }
 
-.hero-content h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  align-self: center;
-}
-
 .little-title {
   justify-self: center;
   align-self: center;
   width: 100%;
 }
 
-.hero a {
-  font-size: 16px;
-  margin-bottom: 30px;
-  /* justify-self: center */
-}
 
 .cta-button, .cta-all-button {
   font-size: 14px;
@@ -1537,12 +1509,14 @@ textarea {
   margin: auto;
   justify-content: center;
   align-content: center;
+  height: auto;
 }
 
 .about-info {
   margin:auto;
   justify-content: center;
   align-content: center;
+  height: auto;
 }
 .about-info p {
   justify-content: center;
