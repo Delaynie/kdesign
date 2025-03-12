@@ -32,6 +32,9 @@
   position: relative;
   overflow: hidden;
 }
+.hero p {
+  font-size: 20px;
+}
 .hero-line {
   width: 0;
   height: 4px;
@@ -1415,14 +1418,15 @@ footer h6{
 }*/
 
 
-.hero-background {
-  /*background-position: 80%;*/
-  height: 90vh;
+.flex-hero-small {
+  height: 60vh;
 }
 
-.home-hero-background {
-  background-position: center;
-  height: 90vh;
+.hero-h1-small {
+  font-size: 45px;
+}
+.hero {
+  font-size: 14;
 }
 
 .big-title {
