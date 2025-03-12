@@ -1419,14 +1419,14 @@ footer h6{
 
 
 .flex-hero-small {
-  height: 60vh;
+  height: 90vh;
 }
 
 .hero-h1-small {
   font-size: 45px;
 }
-.hero {
-  font-size: 14;
+.hero p {
+  font-size: 12;
 }
 
 .big-title {
@@ -1529,10 +1529,8 @@ textarea {
 
 
 footer h6 {
-  text-align: left;
-  margin-left: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-align: center;
+  margin: auto;
 }
 
 .mobile-display {
