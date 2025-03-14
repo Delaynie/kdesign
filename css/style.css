@@ -1347,11 +1347,11 @@ footer h6{
   }
 
   .buttonMenu {
-    margin-top: 12px;
+    margin-top: 14px;
     z-index:100;
   }
   .buttonHome {
-    margin-top: 12px;
+    margin-top: 14px;
     z-index:100;
   }
 
@@ -1449,15 +1449,14 @@ footer h6{
 
 .flex-hero-small {
   height: 90vh;
-  font-size: 45px;
 }
 
 .hero-h1-small {
-  font-size: 45px;
+  font-size: 50px;
 }
 .hero p {
-  max-width: 85vw;
-  font-size: 10;
+  margin: auto;
+  font-size: 10px;
 }
 
 .big-title {
