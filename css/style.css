@@ -1456,7 +1456,7 @@ footer h6{
 }
 .hero p {
   margin: auto;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .big-title {
@@ -1551,6 +1551,9 @@ textarea {
   justify-content: center;
   align-content: center;
   height: auto;
+}
+.about-info h2 {
+  font-size: 18px;
 }
 .about-info p {
   justify-content: center;
