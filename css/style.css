@@ -1531,6 +1531,8 @@ textarea {
 .shipping-details {
   justify-content: center;
   flex-direction: column;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .shipping-item {
   justify-self: center;
@@ -1546,6 +1548,9 @@ textarea {
   align-content: center;
   height: auto;
 }
+.container h2 {
+  font-size: 1.8em;
+}
 
 .about-info {
   margin:auto;
@@ -1554,13 +1559,12 @@ textarea {
   height: auto;
 }
 .about-info h2 {
-  font-size: 2em;
-
+  font-size: 1.8em;
 }
 .about-info p {
   justify-content: center;
   flex-direction: column;
-  padding: 32px;
+  padding: 1.4em;
 }
 
 
