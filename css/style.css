@@ -924,6 +924,13 @@ a {
 
 /* ------ Contact Page Styling ------ */
 
+.contact-container {
+  background-image: linear-gradient(#1a1a1a, #0c1b2c, #0C1B2C);
+  background-color: #0C1B2C;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
 .contact-info {
     padding: 40px 20px;
     background-color: #fff;
@@ -954,12 +961,12 @@ a {
 
 .contact-item h3 {
     font-size: 1.5em;
-    color: #4CAF50;
+    color: #2E6A50;
 }
 
 .contact-item a {
     color: #4CAF50;
-    color: #1F4D3A;
+    color: #2E6A50;
     text-decoration: none;
 }
 
