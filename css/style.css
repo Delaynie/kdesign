@@ -20,6 +20,7 @@
 .flex-hero-small {
   height: 35vh;
   margin: 0;
+  padding-top: 1.6em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +55,7 @@
     text-transform: uppercase;
 }
 .hero-h1-small {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -757,9 +758,10 @@ a {
 /* ABOUT SECTION */
 .about-info {
   background-color: #1a1a1a;
-  
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 2em;
+  padding-left: 2em;
   text-align: center;
   /*
   border-top: 3px solid orange;
@@ -800,7 +802,7 @@ a {
 .alternating-layout {
   width: 100%;
   padding: 40px 30px;
-  background-color: white;
+  background-color: #0C1B2C;
   background-image: linear-gradient(to left, rgb(280,280,280), rgb(300,300,300), rgb(280,280,280));
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
@@ -1266,24 +1268,10 @@ footer h6{
   background-color: rgb(192, 192, 192);
 }
 
-
 .with-lines .line.line2 {
   left: 20px;
 }
 
-.with-lines .line.line3 {
-  left: 30px;
-}
-
-.with-lines .line.line4 {
-  left: 40px;
-  background-color: rgb(199,197,197);
-  background-color: rgb(192, 192, 192);
-}
-
-.with-lines .line.line5 {
-  left: 50px;
-}
 .with-lines .line.line6 {
   background-color: rgb(199,197,197);
   background-color: rgb(192, 192, 192);
@@ -1292,16 +1280,7 @@ footer h6{
 .with-lines .line.line7 {
   right: 20px;
 }
-.with-lines .line.line8 {
-  right: 30px;
-}
-.with-lines .line.line9 {
-  right: 40px;
-  background-color: rgb(192,192,192);
-}
-.with-lines .line.line10 {
-  right: 50px;
-}
+
 
 /* Simple animation for the vertical lines */
 @keyframes fadeLines {
