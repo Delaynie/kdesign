@@ -145,6 +145,7 @@
   display: flex;
   justify-content: center;
   justify-self: center;
+  flex-wrap: wrap;
 }
   /* -------- Nav Styling ---------- */
   .hoverX:hover {
@@ -1366,6 +1367,10 @@ footer h6{
   .banner {
     max-width: 90vw;
     margin: auto;
+  }
+
+  .banner-h2 {
+    font-size: 1.8em;
   }
 
   /* ----- side image ------- */
