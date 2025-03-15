@@ -1363,6 +1363,11 @@ footer h6{
     z-index:100;
   }
 
+  .banner {
+    max-width: 90vw;
+    margin: auto;
+  }
+
   /* ----- side image ------- */
 .mobileImg {
   background-position: center;
@@ -1454,13 +1459,15 @@ footer h6{
   /*background-color: rgba(0, 0, 0, 0.28);*
 }*/
 
-
+.flex-hero {
+  font-size: 45px;
+}
 .flex-hero-small {
   height: 90vh;
 }
 
 .hero-h1-small {
-  font-size: 50px;
+  font-size: 40px;
 }
 .hero p {
   margin: auto;
