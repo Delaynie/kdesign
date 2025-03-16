@@ -361,6 +361,12 @@ a {
   border-top: 2px solid rgb(197,159,45);
   z-index: 1;
 }
+
+.footer-bg {
+  background-color:#1a1a1a;
+  color: rgb(200,200,200);
+}
+
 .bg-linear {
   background-image: linear-gradient(to left, white, rgba(234, 234, 234, 0.542));
 }
@@ -391,24 +397,6 @@ a {
   border: 1px solid transparent;
 }
 
-/* Gold with Black Text */
-.cta-gold {
-  background-color: #C9A227;
-  color: #000000;
-}
-.cta-gold:hover {
-  background-color: #B08C1E;
-}
-
-/* Black with Gold Text */
-.cta-black {
-  background-color: #000000;
-  color: #C9A227;
-  border-color: #C9A227;
-}
-.cta-black:hover {
-  background-color: #333333;
-}
 /* Button container */
 .button-container {
   display: flex;
@@ -1459,12 +1447,6 @@ footer h6{
   padding-left: 0;
 }
 
-/*
-.hero {
-  height: 90vh;
-  text-shadow: none;
-  /*background-color: rgba(0, 0, 0, 0.28);*
-}*/
 
 .hero-h1 {
   font-size: 45px;
