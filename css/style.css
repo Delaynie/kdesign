@@ -1229,7 +1229,6 @@ footer {
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  line-height: 1;
   z-index: 1;
 }
 
@@ -1447,9 +1446,8 @@ footer h6{
   padding-left: 0;
 }
 
-
 .hero-h1 {
-  font-size: 45px;
+  font-size: 40px;
 }
 .flex-hero-small {
   height: 90vh;
@@ -1463,28 +1461,6 @@ footer h6{
   font-size: 18px;
   padding: 32px;
 }
-
-.big-title {
-  padding-top: 60px;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-  text-shadow:none; 
-}
-.bigish-title {
-  padding-top: 40px;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-  text-shadow: none;
-}
-
-.little-title {
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-}
-
 
 .cta-button, .cta-all-button {
   font-size: 14px;
