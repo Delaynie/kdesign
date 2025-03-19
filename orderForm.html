@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<!-- Kimball Design website head information, might need some updating since I haven't stayed on top of new trends -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Kimball Designs</title>
+<!-- Font Choices - Work sans, Fira sans, roboto, inter, dm, montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100;0,100..900;0,200;0,300;0,400;0,500;1,100;1,100..900;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-------------------- CSS and Template Sheets ------------------------->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-------------------- Font Awesome (for icons) -------------------->
+<script src="https://kit.fontawesome.com/df0d47a46d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: #1a1a1a;" class="sectionLines with-lines">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    <a href="/index.html" title="Takes you to the homepage" class="buttonHome w3-top w3-medium" style="width:auto;position:left;z-index:9;margin-top:16px;margin-right: 16px;"><i class="fa fa-home"></i></a>
+
+    <span title="Open menu to see all products" class="buttonMenu w3-top w3-medium" style="width:auto;position:right;z-index:9;margin-top:16px;margin-right: 16px;" onclick="openNav()">Menu <i class="fa fa-bars"></i></span>
+    
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar nav-grad w3-animate-right" style="display:none;padding-top:150px;right:0;z-index:10" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-large w3-display-topright hoverX" style="margin-top: 14px;margin-right:8px;padding:0 12px;transition: all 0.3s ease;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="navItems">
+      <a href="/index.html" class="navButton" onclick="closeNav()">Home</a>
+      <a href="/contact.html" class="navButton" onclick="closeNav()">Contact</a>
+      <a href="/#" class="navButton" onclick="closeNav()" style="color: #C9A227;font-size:22px;">Request an Estimate</a>
+      <h6 style="font-style: italic;" class="navh6">&HorizontalLine; Quick Links &HorizontalLine;</h6>
+
+      <a href="/product_pages/all_products.html" class="navButton" onclick="closeNav()">All Products</a>
+      <a href="/product_pages/vents.html" class="navButton" onclick="closeNav()">Gable Vents</a>
+      <a href="/product_pages/shutters.html" class="navButton" onclick="closeNav()">Shutters</a>
+      <a href="/technical.html" class="navButton" onclick="closeNav()">Technical Information</a>
+    </div>
+  </nav>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to the Top">&uparrow;</button>
+    
+  <!-- UPDATED HERO SECTION -->
+ <section class="flex-hero-small sectionLines with-lines">
+    <div class="line line1 mobile-hide"></div>
+        <div class="line line2 mobile-hide"></div>
+  <div class="hero">
+      <div class="hero-line"></div>
+      <h1 class="hero-text hero-h1-small">Kimball Designs</h1>
+      <!--<p class="hero-text">Request an Estimate Here. We Look Forward to Hearing from You.</p>-->
+      <div style="font-size: 44px; color: #C9A227;" class="mobile-display">&DownArrow;</div>
+
+    </div>
+    <div class="line line6 mobile-hide"></div>
+    <div class="line line7 mobile-hide"></div>
+</section>
+
+<section>
+    <div class="sectionLines with-lines contact-form" style="background-color: rgb(238, 238, 238);">
+        <h2>Order Form</h2>
+        <p>Fill out for the form and we'll put an estimate together.</p>
+        <form action="/submit-form" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="product">Pick Your Product</label>
+                <dropdown></dropdown>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line6 mobile-display"></div>
+        <div class="line line7 mobile-display"></div>
+    </div>
+</section>
+
+        <!--------------- FOOTER ----------------->
+        <footer class="sectionLines with-lines footer-bg">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <h6 class="padding-top">Kimball Designs, LLC Custom Manufacturing</h6>
+            <h6 class="tinyFont">Owned and Operated in Northwest Arkansas</h6>
+            <h6 class="copy padding-bottom">Copyright &copy; 2025 All rights reserved.</h6>
+            <div class="line line6"></div>
+            <div class="line line7"></div>
+        </footer>
+    
+            <div class="line line6 mobile-hide"></div>
+            <div class="line line7 mobile-hide"></div>
+        </section>
+    
+          <!----------Javascript and JS Links -------------->
+        <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector(".hero").classList.add("visible");
+            });
+        </script>
+        <script>
+            function openNav() {
+                if (window.innerWidth <= 768) { // Mobile screens (adjust breakpoint as needed)
+                    document.getElementById("mySidebar").style.width = "100%";
+                } else {
+                    document.getElementById("mySidebar").style.width = "60%";
+                }
+                document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+</body>
+</html>
