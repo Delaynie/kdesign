@@ -22,67 +22,20 @@ const gableProducts = [
     },
     {
         id: 4,
-        name: "Rectangle Gable Vent",
+        name: "Rectangle/Square Gable Vent",
         category: "rectangle",
         image: "/product_images/rectanglevents.jpg",
         description: "A traditional design that enhances the exterior of any home."
     },
     {
         id: 5,
-        name: "Round Gable Vent",
-        category: "round",
+        name: "Triangle Gable Vent",
+        category: "triangle",
         image: "/product_images/round cedar vents.jpg",
         description: "A classic design that ensures ventilation and aesthetic appeal for your home."
     },
-    {
-        id: 6,
-        name: "Tombstone Gable Vent",
-        category: "tombstone",
-        image: "/gallery_images/danmurphy2.jpg",
-        description: "Custom shutters that add both charm and functionality to your windows."
-    },
-    {
-        id: 7,
-        name: "Octagon Gable Vent",
-        category: "octagon",
-        image: "/product_images/octagon_group_thumb.gif",
-        description: "Sleek and modern gable vent designed for better airflow and style."
-    },
-    {
-        id: 8,
-        name: "Rectangle Gable Vent",
-        category: "rectangle",
-        image: "/product_images/rectanglevents.jpg",
-        description: "A traditional design that enhances the exterior of any home."
-    },
-    {
-        id: 9,
-        name: "Round Gable Vent", 
-        category: "round",
-        image: "/product_images/round cedar vents.jpg",
-        description: "A classic design that ensures ventilation and aesthetic appeal for your home."
-    },
-    {
-        id: 10,
-        name: "Tombstone Gable Vent",
-        category: "tombstone",
-        image: "/gallery_images/danmurphy2.jpg",
-        description: "Custom shutters that add both charm and functionality to your windows."
-    },
-    {
-        id: 11,
-        name: "Octagon Gable Vent",
-        category: "octagon",
-        image: "/product_images/octagon_group_thumb.gif",
-        description: "Sleek and modern gable vent designed for better airflow and style."
-    },
-    {
-        id: 12,
-        name: "Rectangle Gable Vent",
-        category: "rectangle",
-        image: "/product_images/rectanglevents.jpg",
-        description: "A traditional design that enhances the exterior of any home."
-    }
+
+    // Add More If Needed
 ];
 
 window.onload = function() {
